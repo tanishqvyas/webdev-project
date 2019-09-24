@@ -74,7 +74,7 @@ body
 {
 	margin:0px;
 	padding: 0px;
-	background-color: #c0d5d5;
+	background-color: #ede6de;
 }
 
 header
@@ -84,7 +84,9 @@ header
 	width: 100%;
 	display: flex;
 	box-shadow: 1px 1px 4px;
-	background-image: linear-gradient(45deg, #9ab8b8 0%, #c0d5d5 100%);
+	/*background-color: #e7d0b4;*/
+	background-image: linear-gradient(45deg, #e7d0b4 0%, #ede6de 100%);
+
 }
 
 header h4
@@ -105,6 +107,6 @@ header img
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 	overflow: hidden;
-	background-color: #e2efef;
+	background-color: #f3efea;
 	border-radius: 20px;
 }
