@@ -74,18 +74,18 @@ body
 {
 	margin:0px;
 	padding: 0px;
-	background-color: #ede6de;
+	background-color: #e1eded;
+
 }
 
 header
 {
-	padding: 10px 10px 10px 10px;
-	border-bottom: 0px red solid;
-	width: 100%;
+	padding: 10px 10px 10px 7px;
 	display: flex;
+	border-radius: 0px 0px 10px 10px;
 	box-shadow: 1px 1px 4px;
-	/*background-color: #e7d0b4;*/
-	background-image: linear-gradient(45deg, #e7d0b4 0%, #ede6de 100%);
+	margin-bottom: 3px;
+	background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%);
 
 }
 
@@ -99,6 +99,60 @@ header img
 	height: 90px;
 }
 
+#main-navbar
+{
+	display: flex;
+	margin: 10px 10px 0px 10px;
+	padding: 10px 10px 10px 20px;
+	border-radius: 20px;
+	box-shadow: 1px 1px 4px;
+
+}
+
+#main-navbar a
+{
+	color: black;
+}
+
+
+#main-navbar h4
+{
+	border-radius: 23px;
+	margin-left: 10px;
+	margin-right:10px; 
+	position: absolute;
+	padding: 11px 10px;
+
+}
+
+#main-navbar h4:hover
+{
+	border:2px white solid;
+	border-radius: 23px;
+	margin-left: 10px;
+	margin-right:10px; 
+	position: absolute;
+	padding: 10px 10px;
+	background-color: #8baaaa;
+	color: white;
+}
+
+
+#aboutus
+{
+	right: 100px;
+}
+
+#stores
+{
+	right: 30px;
+}
+
+#main-navbar img
+{
+	height: 35px;
+}
+
 .container
 {
 	box-shadow: 1px 3px 7px;
@@ -107,6 +161,6 @@ header img
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 	overflow: hidden;
-	background-color: #f3efea;
+	background-color: #e8eded;
 	border-radius: 20px;
 }
