@@ -1,0 +1,177 @@
+
+/*
+body
+{
+	margin:0px;
+
+	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+
+}
+
+.wrapper
+{
+	height: 90vh;
+	width: 80vw;
+	max-width: 1100px;
+	margin: 1rem auto;
+	background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+	box-shadow: 1px 3px 30px rgba(0,0,0, 0.4)
+	border-radius : 0.2em;
+	position: relative;
+
+}
+
+.container
+{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	overflow: hidden;
+	height:100%;
+
+}
+
+.container .title
+{
+	width: 90%;
+	height: 20%;
+	text-align: center;
+	padding: 2rem;
+	margin: 9rem 0;
+
+}
+
+.container h1
+{
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 3rem;
+	color: #000;
+}
+
+
+.container p
+{
+	font-family: 'Muli',sans-serif;
+	color:#000;
+}
+
+button
+{
+	font-family: 'Muli',sans-serif;
+	font-size: 1rem;
+	padding:8rem 2.3rem;
+}
+
+*/
+
+*
+{
+	margin:0px;
+	padding: 0px;
+
+}
+
+body
+{
+	margin:0px;
+	padding: 0px;
+	background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+
+}
+
+.container
+{
+	box-shadow: 1px 3px 30px;
+	padding: 10px;
+	margin: 10px 10px; 
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	overflow: hidden;
+	background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+
+}
+
+.image
+{
+
+	overflow: hidden;
+	border-radius: 39%;
+	padding: 10px;
+}
+
+.image img
+{
+	
+	position: relative;
+	left:30px;	
+	height: 569px;
+	border-radius: 69%;
+	transition: transform 3s;
+
+}
+
+.image img:hover
+{
+	border-radius: 50%;
+	transform: scale(1.09);
+}
+
+
+
+.content
+{
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+	overflow: hidden;
+}
+
+.content 
+{
+	margin-top: 7px;
+	font-family:'Lexend Deca', sans-serif;
+}
+
+.content img
+{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	height: 250px;
+	border:3px black solid;
+
+}
+
+.content p
+{	
+	margin-bottom: 40px;
+	font-family: 'Muli',sans-serif;
+}
+
+.content button
+{
+	font-family: 'Muli',sans-serif;
+	padding:9px;
+	margin: 3px;
+	border-radius: 20px;
+	background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+
+}
+
+
+.content button:hover
+{
+	font-family: 'Muli',sans-serif;
+	padding:9px;
+	margin: 3px;
+	color: black;
+	border-radius: 20px;
+	background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+
+}
+
+#copyright
+{
+	position: absolute;
+	bottom: 0px;
+}
