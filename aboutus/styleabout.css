@@ -49,6 +49,7 @@ body
 
 }
 
+
 .content h1
 {
 	margin-top: 7px;
@@ -127,3 +128,15 @@ footer p
 
 
 
+@media(max-width: 930px)
+{
+	.content
+	{
+		padding: 10px;
+		text-align: center;
+		overflow: hidden;
+		display: block;
+		box-sizing: border-box;
+
+	}
+}
