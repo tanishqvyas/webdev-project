@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+	
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="viewport" content="width = device-width,initial-scale = 0.2">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Landing Page</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese">
 	<link rel="stylesheet" type="text/css" href="randomname.css">
+
+
+	<link rel="stylesheet" type="text/css" href="side_bar_style.css">
+
+	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
+	<script>
+		function openSlideMenu()
+		{
+			document.getElementById('side-menu').style.width = '250px';
+		}
+		function closeSlideMenu()
+		{
+			document.getElementById('side-menu').style.width = '0';
+		}
+		
+	</script>
+
 </head>
+
 
 <body>
 	
@@ -24,9 +42,19 @@
 
 	</header>
 
+	
+	<div id = "main">
+		<button class="open-side-menu" onclick= "openSlideMenu()"><a href="#"> <img src="../images/menu.png"> </a></button>
+
+	</div>
+
+
+		
+	
+<!--
 	<navbar id="main-navbar">
 		<a href="#"> <img src="../images/menu.png"> </a>
-		<!--
+		
 		<a href="../aboutus/aboutus.html"> <h4 id ="aboutus">About Us</h4> </a>
 		<a href="#"> <h4 id="stores">Stores</h4 > </a>
 		<input type="checkbox" id="menu-toggle">
@@ -37,10 +65,35 @@
 		 	   	<li><a href="#">About</a></li>
 		    	<li><a href="#">Portfolio</a></li>
 		    	<li><a href="#">Contact</a></li>
-			</ul> -->
+			</ul> 
 
 
-	</navbar>
+	</navbar> -->
+
+	<div id = "side-menu" class="side-nav">
+		<a href="#" class = "btn-close" onclick="closeSlideMenu()"><i class="far fa-window-close" style = "align-items: right"></i></a>
+				
+		<ul>
+            <li><a href="" class="btn"><i class="fas fa-home" style = "color:#E2B899"></i> Find a Home  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-home" style = "color:#894442"></i> Temporary Kennels  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-paw" style = "color:#DB6925"></i> Adopt  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-first-aid" style ="color:#ED1F18"></i> Rescue  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-shopping-cart" style = "color:#3A47F9"></i> Pet Stores near me  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-user" style = "color:#215955"></i> Pet Trainer  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-user-md" style = "color:#13DED0"></i> Contact a Vet  </a></li></br>
+
+            <li><a href="" class="btn"><i class="fas fa-paw" style= "color:#DE7B13"></i> General Pet Care  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-hands-helping" style = "color:#13DEAB"></i> Volunteer  </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-hand-holding-usd" style = "color:#34D346"></i> Donate  </a></li></br>
+            <li><a href="" class="btn"><i class="far fa-list-alt"></i> Events </a></li></br>
+
+            <li><a href="" class="btn"><i class="fas fa-sad-tear" style = "color:#FBF543"></i> Saying Goodbye </a></li></br>
+            <li><a href="" class="btn"><i class="fas fa-address-book" style = "color:orange"></i> Contact  </a></li></br>
+
+		</ul>
+			
+	</div>
+
 
 
 	<div class="container">
@@ -49,9 +102,11 @@
 
 		</form>
 
-	</div> <!--container-->
+	</div> 
+	
 
 
-</body>
+</body>	
+
 
 </html>

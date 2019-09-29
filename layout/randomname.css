@@ -100,7 +100,7 @@ header img
 
 }
 
-#main-navbar
+#main
 {
 	display: flex;
 	margin: 0px;
@@ -113,13 +113,13 @@ header img
 
 }
 
-#main-navbar a
+#main a
 {
 	color: black;
 }
 
 
-#main-navbar h4
+#main h4
 {
 	border-radius: 23px;
 	margin-left: 10px;
@@ -129,7 +129,7 @@ header img
 
 }
 
-#main-navbar h4:hover
+#main h4:hover
 {
 	border:2px white solid;
 	border-radius: 23px;
@@ -152,7 +152,7 @@ header img
 	right: 30px;
 }
 
-#main-navbar img
+#main img
 {
 	height: 35px;
 
