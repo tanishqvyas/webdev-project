@@ -113,10 +113,15 @@ header img
 
 }
 
-#main a
+#main h3
 {
-	color: black;
+	margin-left: 10px;
+	position: relative;
+	top: 7px;
+	right:2px;
+	font-weight: 500;
 }
+
 
 
 #main h4

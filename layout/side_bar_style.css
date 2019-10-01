@@ -1,49 +1,98 @@
 body
 {
 	font-family: "Arial",Serif;
-	background-color:#f2f2f3;
+	
 }
 
-#side-menu ul{
+#menu-header
+{	
+	margin: 10px 0px;
+	display: flex;
+
+}
+
+#menu-header img
+{
+	height: 70px;
+}
+
+#menu-header div h1,#menu-header div h2,#menu-header div h4
+{
+	font-size: 17px;
+	font-weight: 7;
+	color: black;
+}
+
+
+#side-menu
+{
+	background-color: #8baaaa;
+	position: absolute;
+	
+}
+
+#side-menu .btn-close
+{
+	position: relative;
+	right: 39px;
+}
+
+#side-menu ul
+{
 	float: left;
 	text-align: left;
 	padding: 12px 16px;
-	
-	font-size: 17px;
-	background-image: linear-gradient(-45deg, #8baaaa 0%, #e1eded 100%);
 	list-style-type: none;
+	display: block;
+	/*background-image: linear-gradient(-45deg, #8baaaa 0%, #e1eded 100%);*/
 
 }
 
-
-
-#main img{
-
-	background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%);
+#side-menu ul li
+{
+	
+	margin: 0px 0px 10px 0px;
+	width: 100%;
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+
+#side-menu ul li a
+{
+	font-size: 17px;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+#side-menu ul li:hover
+{
+	background-image: linear-gradient(45deg, #e1eded 0%, #8baaaa 100%);
+
 }
 
-.topnav a:hover {
-  background-color: #8B0000;
-  color: black;
+.topnav 
+{
+	overflow: hidden;
+  	background-color: #333;
 }
 
-.topnav a.active {
-  background-color: #8B0000;
-  color: white;
+.topnav a 
+{
+	float: left;
+  	color: #f2f2f2;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+.topnav a:hover 
+{
+	background-color: #8B0000;
+  	color: black;
+}
+
+.topnav a.active 
+{
+	background-color: #8B0000;
+  	color: white;
 }
 
 .side-nav
@@ -83,14 +132,6 @@ body
 	font-size: ;
 	margin-left: 50px;
 	align-items: right
-}
-
-#main
-{
-	transition: margin-left 0.5s;
-	padding: 20px;
-	overflow: hidden;
-	width: 100%;
 }
 
 
