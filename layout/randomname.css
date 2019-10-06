@@ -171,7 +171,7 @@ header img
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 	overflow: hidden;
-	background-color: #e8eded;
+	background-color: #eef3f3;
 	border-radius: 20px;
 }
 
