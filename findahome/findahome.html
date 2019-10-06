@@ -13,8 +13,9 @@
 	<link rel="stylesheet" type="text/css" href="findahome.css">
 
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../layout/menu.js"></script>
 
-	<script src="../layout/menu.js"></script>
+	<script type="text/javascript" src="findahome.js"></script>
 	
 	
 </head>
@@ -112,18 +113,18 @@
 		<form action="" method="" id="find-a-family-form">
 			<div class="form-fields">
 				<label id="your-name">Your Name<span>*</span></label>
-				<input type="text" name="ownerName" placeholder="Enter Your Name" required >
+				<input type="text" name="ownerName" onfocus="onFocus()" class="input-style" required  >
 			</div>
 
 			<div class="form-fields">
 				<label id ="pet-name">Pet's Name<span>*</span></label>
-				<input type="text" name="petName" placeholder="Enter Your Pet's Name" required>
+				<input type="text" name="petName" onfocus="onFocus()" class="input-style" required>
 			</div>
 
 
 			<div class="form-fields">
 				<label id="owner-email">Your Email<span>*</span></label>
-				<input type="email" name="ownerEmail" placeholder="Enter Your Email Id" autocomplete="on" required>
+				<input type="email" name="ownerEmail" autocomplete="on" onfocus="onFocus()" class="input-style" required>
 			</div>
 
 
@@ -131,14 +132,14 @@
 
 			<div class="form-fields">
 				<label id="pet-description">Description<span>*</span></label>
-				<textarea name="petDescription" placeholder="Enter all relevant details about your pet and the kind of family you are looking for your beloved pet" maxlength="100" autocomplete="on" required>
+				<textarea name="petDescription" maxlength="700" autocomplete="on" onfocus="onFocus()" class="input-style" required>
 					
 				</textarea>
 			</div>
 
 			<div class="form-fields">
 				<label id="pet-image">Pet Profile</label>
-				<input type="file" accept=".jpeg, .png, .jpg" name="image" placeholder="+ upload">
+				<input type="file" accept=".jpeg, .png, .jpg" name="image" >
 			</div>
 
 			<button id="button">submit</button>

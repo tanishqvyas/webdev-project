@@ -27,7 +27,8 @@ body
 #side-menu
 {
 	background-color: #8baaaa;
-	position: absolute;
+	position: fixed;
+	top: 0px;
 	
 }
 
