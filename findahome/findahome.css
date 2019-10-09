@@ -55,7 +55,7 @@
 #pet-age
 {
 	margin-right: 52px;
-	
+
 }
 
 #city-name
@@ -71,6 +71,16 @@
 #pet-description
 {
 	margin-right: 40px;
+}
+
+#pet-image
+{
+	margin-right: 53px;	
+}
+
+#pet-image-input
+{
+	background-color: white;
 }
 
 textarea
