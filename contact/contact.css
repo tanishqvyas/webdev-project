@@ -1,0 +1,29 @@
+.container
+{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	overflow: hidden;
+}
+
+.container h3
+{
+	padding: 10px 0px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	border-bottom: 2px grey solid;
+}
+
+
+
+.grid-container
+{
+	padding: 30px;
+}
+
+#grid-img
+{
+	height: 300px;
+	width: 100%;
+	border-radius: 20px;
+}
+

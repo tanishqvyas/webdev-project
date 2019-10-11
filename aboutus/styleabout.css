@@ -5,6 +5,7 @@
 
 }
 
+
 body
 {
 	margin:0px;
@@ -12,6 +13,20 @@ body
 	background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
 
 }
+
+#back-button
+{
+	position: absolute;
+	text-decoration: none;
+	top:25px;
+	color: black;
+}
+
+#back-button:hover
+{
+	color: #cfd9df;
+}
+
 
 .container
 {
