@@ -1,5 +1,16 @@
-function onFocus()
+// making a variable for submit button
+const btn = document.querySelector('#button');
+const popUp = document.getElementById('successful-submit');
+
+// Adding event listner for the submit button
+btn.addEventListener('click', onsubmit);
+
+function onsubmit(event) 
 {
-	let inputItem = document.querySelector("input");
-	//this doesnt work as of now
+	event.preventDefault();
+	popUp.style.opacity = 1;
+
+	setTimeout(()=> popUp.style.opacity = 0, 3000);
+	
 }
+

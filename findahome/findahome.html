@@ -15,7 +15,7 @@
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="../layout/menu.js"></script>
 
-	<script type="text/javascript" src="findahome.js"></script>
+	
 	
 	
 </head>
@@ -109,28 +109,33 @@
 
 
 	<div class="container">
+
+		<span id="successful-submit">
+			<p>Your request has been submitted succesfully !</p>
+			<img src="../images/verified1.png">
+		</span>
 	
 		<form action="" method="" id="find-a-family-form">
 			<div class="form-fields">
 				<label id="your-name">Your Name<span>*</span></label>
-				<input type="text" name="ownerName" onfocus="onFocus()" class="input-style" required  >
+				<input type="text" name="ownerName" class="input-style" required  >
 			</div>
 
 			<div class="form-fields">
 				<label id ="pet-name">Pet's Name<span>*</span></label>
-				<input type="text" name="petName" onfocus="onFocus()" class="input-style" required >
+				<input type="text" name="petName" class="input-style" required >
 			</div>
 
 
 			<div class="form-fields">
 				<label id ="pet-age">Pet's Age<span>*</span></label>
-				<input type="number" name="petAge" min="1" max="17" onfocus="onFocus()" on class="input-style" required>
+				<input type="number" name="petAge" min="1" max="17" class="input-style" required>
 			</div>
 
 
 			<div class="form-fields">
 				<label id ="city-name">City Name<span>*</span></label>
-				<input type="text" name="cityName" onfocus="onFocus()" class="input-style" required>
+				<input type="text" name="cityName" class="input-style" required>
 			</div>
 
 
@@ -140,7 +145,7 @@
 
 			<div class="form-fields">
 				<label id="owner-email">Your Email<span>*</span></label>
-				<input type="email" name="ownerEmail" autocomplete="on" onfocus="onFocus()" class="input-style" required>
+				<input type="email" name="ownerEmail" autocomplete="on"  class="input-style" required>
 			</div>
 
 
@@ -148,7 +153,7 @@
 
 			<div class="form-fields">
 				<label id="pet-description">Description<span>*</span></label>
-				<textarea name="petDescription" maxlength="700" autocomplete="on" onfocus="onFocus()" class="input-style" required>
+				<textarea name="petDescription" maxlength="700" autocomplete="on" class="input-style" required>
 					
 				</textarea>
 			</div>
@@ -158,13 +163,13 @@
 				<input id ="pet-image-input" type="file" accept=".jpeg, .png, .jpg" name="image" aria-label="File Browse Example" >
 			</div>
 
-			<button id="button">submit</button>
+			<button id="button" >submit</button>
 		</form>
 
 	</div> 
-	
 
 
+	<script type="text/javascript" src="findahome.js"></script>
 </body>	
 
 
