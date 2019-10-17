@@ -3,5 +3,98 @@
 	display: block;
 }
 
+p
+{
+	margin-top: 10px;
+}
 
 
+#temp-kennel-form
+{
+	margin-top: 70px;
+}
+
+#temp-kennel-form input, select
+{
+	width: 200px;
+	height: 35px;
+	border-radius: 10px;
+	padding: 2px;
+	padding-left: 5px;
+	/*box-shadow: 1px 1px 5px;*/
+	background-color: white;
+}
+
+
+
+
+
+.input-style
+{
+	border:1px black solid;
+
+
+}
+
+.form-fields
+{
+	margin-bottom: 40px;
+	text-align-last: center left; 
+	font-size: 17px;
+	vertical-align: middle;
+}
+
+span
+{
+	color: red;
+}
+
+
+#your-name
+{
+
+	margin-right: 142px;
+
+}
+
+#pet-name
+{
+	margin-right: 139px;
+}
+
+#checkin-date
+{
+	margin-right: 120px;
+}
+
+#checkout-date
+{
+	margin-right: 111px;
+}
+
+#organization
+{
+	margin-right: 40px;
+}
+
+#button
+{
+	background-color: #4ccb55;
+	border-radius: 40px;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+#button:hover
+{
+	background-color: #5cb863;
+	border-radius: 40px;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 30px;
+}

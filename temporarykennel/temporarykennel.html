@@ -111,92 +111,47 @@
 
 	<div class="container">
 
-		<form>
-			<div class="form-group">
-				<div class="form-checkbox">
-					<label for="roundtrip">
-						<input type="radio" id="roundtrip" name="flight-type">
-						<span></span>Roundtrip
-					</label>
-					<label for="one-way">
-						<input type="radio" id="one-way" name="flight-type">
-						<span></span>One way
-					</label>
-					<label for="multi-city">
-						<input type="radio" id="multi-city" name="flight-type">
-						<span></span>Multi-City
-					</label>
-				</div>
+		<p><span>*</span>Select the check-in and check-out dates along with the nearest Kennel. Then press confirm booking in order to book a temporary kennel for your beloved dog to stay in.</p>
+
+		<form id="temp-kennel-form">
+
+			<div class="form-fields">
+				<label id="your-name">Your Name<span>*</span></label>
+				<input type="text" name="ownerName" class="input-style" required  >
 			</div>
-			
-			<div class="row">
-				<div class="col-md-6">
-					<div class="form-group">
-						<span class="form-label">Flying from</span>
-						<input class="form-control" type="text" placeholder="City or airport">
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<span class="form-label">Flyning to</span>
-						<input class="form-control" type="text" placeholder="City or airport">
-					</div>
-				</div>
+
+			<div class="form-fields">
+				<label id ="pet-name">Pet's Name<span>*</span></label>
+				<input type="text" name="petName" class="input-style" required >
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="form-group">
-						<span class="form-label">Departing</span>
-						<input class="form-control" type="date" required>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="form-group">
-						<span class="form-label">Returning</span>
-						<input class="form-control" type="date" required>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="form-group">
-						<span class="form-label">Adults (18+)</span>
-						<select class="form-control">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-						</select>
-						<span class="select-arrow"></span>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="form-group">
-						<span class="form-label">Children (0-17)</span>
-						<select class="form-control">
-							<option>0</option>
-							<option>1</option>
-							<option>2</option>
-						</select>
-						<span class="select-arrow"></span>
-					</div>
-				</div>
+
+
+			<div class="form-fields">
+				<label id ="checkin-date">Check-in Date<span>*</span></label>
+				<input type="date" name="checkinDate" class="input-style" required >
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="form-group">
-						<span class="form-label">Travel class</span>
-						<select class="form-control">
-							<option>Economy class</option>
-							<option>Business class</option>
-							<option>First class</option>
-						</select>
-						<span class="select-arrow"></span>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="form-btn">
-						<button class="submit-btn">Show flights</button>
-					</div>
-				</div>
+
+			<div class="form-fields">
+				<label id ="checkout-date">Check-out Date<span>*</span></label>
+				<input type="date" name="checkoutDate" class="input-style" required >
 			</div>
+		
+
+			<div class="form-fields">
+		
+				<label id="organization">Select Temporary Kennel<span>*</span></label>
+				<select class="input-style">
+					<option>Dog's Shine, Bangalore</option>
+					<option>Woof!, Bangalore</option>
+					<option>MyBone, Mumbai</option>
+					<option>Gush Puppies, Mumbai</option>
+					<option>Paws for Paws, Delhi</option>
+				</select>
+			</div>
+
+
+			<button id="button" >submit</button>
+
 		</form>
 		
 
