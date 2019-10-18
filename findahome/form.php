@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,17 +7,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width = device-width,initial-scale = 0.2">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Landing Page</title>
+	<title>Find A Home</title>
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese">
-	<link rel="stylesheet" type="text/css" href="../layout/randomname.css">
-	<link rel="stylesheet" type="text/css" href="../layout/side_bar_style.css">
-	<link rel="stylesheet" type="text/css" href="findahome.css">
+	<?php
 
-	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="../layout/menu.js"></script>
+	echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese"/>';
+	echo '<link rel="stylesheet" type="text/css" href="../layout/randomname.css"/>';
+	echo '<link rel="stylesheet" type="text/css" href="../layout/side_bar_style.css"/>';
+	echo '<link rel="stylesheet" type="text/css" href="findahome.css"/>'; 
 
-	
+	echo '<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>';
+	echo '<script type="text/javascript" src="../layout/menu.js"></script>';
+
+	echo '<script type="text/javascript" src="findahome.js"></script>';
+
+	?>
 	
 	
 </head>
@@ -43,24 +49,7 @@
 
 		
 	
-<!--
-	<navbar id="main-navbar">
-		<a href="#"> <img src="../images/menu.png"> </a>
-		
-		<a href="../aboutus/aboutus.html"> <h4 id ="aboutus">About Us</h4> </a>
-		<a href="#"> <h4 id="stores">Stores</h4 > </a>
-		<input type="checkbox" id="menu-toggle">
-		 	<label id="trigger" for="menu-toggle"></label>
-		  	<label id="burger" for="menu-toggle"></label>
-		 	<ul id="menu">
-		    	<li><a href="#">Home</a></li>
-		 	   	<li><a href="#">About</a></li>
-		    	<li><a href="#">Portfolio</a></li>
-		    	<li><a href="#">Contact</a></li>
-			</ul> 
 
-
-	</navbar> -->
 
 	<div id = "side-menu" class="side-nav">
 		<a href="#" class = "btn-close" onclick="closeSlideMenu()">↩</a>
@@ -109,33 +98,28 @@
 
 
 	<div class="container">
-
-		<span id="successful-submit">
-			<p>Your request has been submitted succesfully !</p>
-			<img src="../images/verified1.png">
-		</span>
 	
-		<form action="" method="" id="find-a-family-form">
+		<form action="insert.php" method="post" id="find-a-family-form">
 			<div class="form-fields">
 				<label id="your-name">Your Name<span>*</span></label>
-				<input type="text" name="ownerName" class="input-style" required  >
+				<input type="text" name="ownerName" onfocus="onFocus()" class="input-style" required  >
 			</div>
 
 			<div class="form-fields">
 				<label id ="pet-name">Pet's Name<span>*</span></label>
-				<input type="text" name="petName" class="input-style" required >
+				<input type="text" name="petName" onfocus="onFocus()" class="input-style" required >
 			</div>
 
 
 			<div class="form-fields">
 				<label id ="pet-age">Pet's Age<span>*</span></label>
-				<input type="number" name="petAge" min="1" max="17" class="input-style" required>
+				<input type="number" name="petAge" min="1" max="17" onfocus="onFocus()" on class="input-style" required>
 			</div>
 
 
 			<div class="form-fields">
 				<label id ="city-name">City Name<span>*</span></label>
-				<input type="text" name="cityName" class="input-style" required>
+				<input type="text" name="cityName" onfocus="onFocus()" class="input-style" required>
 			</div>
 
 
@@ -145,7 +129,7 @@
 
 			<div class="form-fields">
 				<label id="owner-email">Your Email<span>*</span></label>
-				<input type="email" name="ownerEmail" autocomplete="on"  class="input-style" required>
+				<input type="email" name="ownerEmail" autocomplete="on" onfocus="onFocus()" class="input-style" required>
 			</div>
 
 
@@ -153,7 +137,7 @@
 
 			<div class="form-fields">
 				<label id="pet-description">Description<span>*</span></label>
-				<textarea name="petDescription" maxlength="700" autocomplete="on" class="input-style" required>
+				<textarea name="petDescription" maxlength="700" autocomplete="on" onfocus="onFocus()" class="input-style" required>
 					
 				</textarea>
 			</div>
@@ -163,14 +147,33 @@
 				<input id ="pet-image-input" type="file" accept=".jpeg, .png, .jpg" name="image" aria-label="File Browse Example" >
 			</div>
 
-			<button id="button" >submit</button>
+			<button id="button">submit</button>
 		</form>
 
 	</div> 
+	
 
 
-	<!--<script type="text/javascript" src="findahome.js"></script>-->
 </body>	
 
 
 </html>
+
+<!--
+	<navbar id="main-navbar">
+		<a href="#"> <img src="../images/menu.png"> </a>
+		
+		<a href="../aboutus/aboutus.html"> <h4 id ="aboutus">About Us</h4> </a>
+		<a href="#"> <h4 id="stores">Stores</h4 > </a>
+		<input type="checkbox" id="menu-toggle">
+		 	<label id="trigger" for="menu-toggle"></label>
+		  	<label id="burger" for="menu-toggle"></label>
+		 	<ul id="menu">
+		    	<li><a href="#">Home</a></li>
+		 	   	<li><a href="#">About</a></li>
+		    	<li><a href="#">Portfolio</a></li>
+		    	<li><a href="#">Contact</a></li>
+			</ul> 
+
+
+	</navbar> -->
