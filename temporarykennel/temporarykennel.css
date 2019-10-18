@@ -21,7 +21,7 @@ p
 	border-radius: 10px;
 	padding: 2px;
 	padding-left: 5px;
-	/*box-shadow: 1px 1px 5px;*/
+	box-shadow: 1px 1px 5px;
 	background-color: white;
 }
 
