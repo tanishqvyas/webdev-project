@@ -25,19 +25,15 @@
 	
 	
 </head>
-
-
 <body>
 
 	<header>
-
 		<img src="../images/logo.png">
 		<div>
 			<h1>Destination</h1>
 			<h2>Kennel</h2>
 			<h4>We are your helping paws 🐾</h4>
 		</div>
-
 	</header>
 
 	
@@ -47,22 +43,18 @@
 	</div>
 
 
-		
-	
-
-
 	<div id = "side-menu" class="side-nav">
 		<a href="#" class = "btn-close" onclick="closeSlideMenu()">↩</a>
 				
-		<div id = "menu-header">
-			<img src="../images/logo.png">
-			<div>
+<div id = "menu-header">
+	<img src="../images/logo.png">
+		<div>
 				<h1>Destination</h1>
 				<h2>Kennel</h2>
 				<h4>We are your helping paws 🐾</h4>
-			</div>
 		</div>
-		<hr style="background-color: black;">
+	</div>
+<hr style="background-color: black;">
 
 		<ul>
             <li><a href="" class="btn" onclick="closeSlideMenu()"><i class="fas fa-home" ></i> Find a Home</a></li>
