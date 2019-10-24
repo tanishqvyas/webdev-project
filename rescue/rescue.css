@@ -80,3 +80,8 @@ span {
         color: white;
         cursor: pointer;
     }
+=======
+#sidelist
+{
+	border: 10px solid red;
+}
