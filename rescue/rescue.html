@@ -5,15 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width = device-width,initial-scale = 0.2">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Landing Page</title>
+	<title>Rescue/Emergency </title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese">
 	<link rel="stylesheet" type="text/css" href="../layout/randomname.css">
 	<link rel="stylesheet" type="text/css" href="../layout/side_bar_style.css">
+	<link rel="stylesheet" type="text/css" href="rescue.css">
+
+
 
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
 
 	<script src="../layout/menu.js"></script>
+	<script type=" text/javascript" src = "rescue.js"></script>
+
 	
 	
 </head>
@@ -35,30 +40,9 @@
 	
 	<div id = "main">
 		<img src="../images/menu.png" onclick= "openSlideMenu()">
-		<h3> ⇛ Rescue</h3>
+		<h3> ⇛ Rescue/Emergency</h3>
 	</div>
 
-
-		
-	
-<!--
-	<navbar id="main-navbar">
-		<a href="#"> <img src="../images/menu.png"> </a>
-		
-		<a href="../aboutus/aboutus.html"> <h4 id ="aboutus">About Us</h4> </a>
-		<a href="#"> <h4 id="stores">Stores</h4 > </a>
-		<input type="checkbox" id="menu-toggle">
-		 	<label id="trigger" for="menu-toggle"></label>
-		  	<label id="burger" for="menu-toggle"></label>
-		 	<ul id="menu">
-		    	<li><a href="#">Home</a></li>
-		 	   	<li><a href="#">About</a></li>
-		    	<li><a href="#">Portfolio</a></li>
-		    	<li><a href="#">Contact</a></li>
-			</ul> 
-
-
-	</navbar> -->
 
 	<div id = "side-menu" class="side-nav">
 		<a href="#" class = "btn-close" onclick="closeSlideMenu()">↩</a>
@@ -78,9 +62,9 @@
             
             <li><a href="../temporarykennel/temporarykennel.html" class="btn"><i class="fas fa-home"  ></i> Temporary Kennels</a></li>
             
-            <li><a href="../adopt/adopt.html" class="btn"><i class="fas fa-paw"  ></i> Adopt</a></li>
+            <li><a href="" class="btn" onclick="closeSlideMenu()"><i class="fas fa-paw"  ></i> Adopt</a></li>
             
-            <li><a href="" class="btn" onclick="closeSlideMenu()"><i class="fas fa-first-aid"  ></i> Rescue</a></li>
+            <li><a href="../rescue/rescue.html" class="btn"><i class="fas fa-first-aid"  ></i> Rescue</a></li>
             
             <li><a href="../storesnearme/storesnearme.html" class="btn"><i class="fas fa-shopping-cart"  ></i> Pet Stores near me</a></li>
             
@@ -105,18 +89,222 @@
 	</div>
 
 
+<h1>Animal Rescue Organisations based in Bengaluru </h1>
 
-	<div class="container">
-		<form>
-			
 
-		</form>
+<div class="info-card">
+		<div class="header-info">
+			<div class="header-text">
+				
+				<button type="button" class="collapsible"><h2 class="organisation-name">Charlie's Animal Rescue Centre (CARE)</h2></button>
+				<div class="content">
+				<p>Charlies Animal Rescue Centre – CARE established in January 2013. The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.</p>				
 
-	</div> 
-	
+				<h5 class="phone-number"><span>📞</span> 9035999372</h5>
+				<h5 class = "facebook"><span>f </span>CharliesAnimalRescuecentrE</h5>
+				<h5 class="organisation-address"><span>📍</span> Survey No. 124/1 Mittaganahalli Cross, Near Reva College, Yelahanka, Bengaluru, Karnataka 560064</h5>
+			</div>
+		</div>
+	</div>
+
+
+<div class="info-card">
+		<div class="header-info">
+			<div class="header-text">
+				
+				<button type="button" class="collapsible"><h2 class="organisation-name">Save Animals India </h2></button>
+				<div class="content">
+				<p>Involved in rescue, rehablitation and shelter of animals.</p>
+				<h5 class="phone-number"><span>📞</span> 999924342</h5>
+				<h5 class="email"><span>✉</span>saveanimalsindiant@gmail.com</h5>
+				<h5 class="organisation-address"><span>📍</span>Air Force base, UNASAMARANAHALLI Lake, behind Yelahanka, Bengaluru, Karnataka 562157</h5>
+			</div>
+		</div>
+</div>
+
+
+<div class="info-card">
+	<div class="header-info">
+			<div class="header-text">
+				<button type="button" class="collapsible"><h2 class="organisation-name">CUPA Trauma Centre</h2></button>
+				<div class="content">
+				<p>For the rescue and treatment of sick and injured stray animals</p>
+				
+				<h5 class="phone-number"><span>📞</span> +91 080 22947300</h5>
+				<h5 class="organisation-address"><span>📍</span>KVAFSU, Veterinary College Campus,Bellary Road, Hebbal, Bangalore 560024</h5>
+		</div>
+	</div>
+</div>
+
+
+<div class="info-card">
+	<div class="header-info">
+		<div class="header-text">
+				<button type="button" class="collapsible"><h2 class="organisation-name">KRUPA–Animal Hospital and Shelter</h2></button>
+				<div class="content">
+					<p>NGO for Treatment and Rehabilitation of Animals.</p>
+						
+				<h5 class="phone-number"><span>📞</span>9880563690</h5>
+				<h5 class="organisation-address"><span>📍</span>16,7th Main Rd, Subash Nagar, Kengeri Satellite Town, Bengaluru, Karnataka 560060</h5>
+		
+		</div>
+	</div>
+</div>
+
+
+
+<div class="info-card">
+	<div class="header-info">
+		<div class="header-text">
+				<button type="button" class="collapsible"><h2 class="organisation-name">Large Animal Rescue & Rehabilitation Center </h2></button>
+				<div class="content">
+
+				<p>For treatment of injured and abandoned bovines and equines.</p>				
+				
+				<h5 class="phone-number"><span>📞</span>+91 080 22947307/17</h5>
+				<h5 class="organisation-address"><span>📍</span>32/1, Upadhayaya layout, Nagadevanahalli,Kengeri New Town,Bangalore</h5>
+		</div>
+	</div>
+</div>
+
+
+<div class="info-card">
+		<div class="header-info">
+			<div class="header-text">
+				<button type="button" class="collapsible"><h2 class="organisation-name"> Animal Aid Unlimited</h2></button>
+				<div class="content">
+					<p>This Indian NGO runs a hospital and sanctuary for injured or ill street animals and rescues thousands a year. AAU runs an emergency rescue service for dogs, cows, donkeys, birds and cats and brings them to their hospital for medical treatment and they provide sanctuary for the disabled animals who need long time care or permanent homes. AAU was founded in 2002.</p>	
+				
+				<h5 class="phone-number"><span>📞</span> 09829843726</h5>
+				<h5 class="email"><span>✉</span>info@animalaidunlimited.org </h5>
+				<h5 class="organisation-address"><span>📍</span>India</h5>
+			</div>
+		
+	</div>
+</div>
+
+<!-- SOME BASIC STEPS TO BE FOLLOWED IN EMERGENCY SITUATIONS.
+	NOT THE SAME AS FAQ 
+	refer this https://www.cdu.edu.au/sites/default/files/ori/documents/dpaw_sop14.2_first_aid_for_animals.pdf
+
+-->
+
+<!-- should we have other situations like finding a deserted animal, feeding it , setting up a temporaryshelter for it -->
+
+<div class="standard-procedure-card">
+		<div class="standard-procedure-FAQ">
+			<div class="header-text">
+
+				<h1> Standard Procedures to be followed in case of Accidents</h1>
+
+				<h3> Assessing the situation </h3>
+				<p> ... </p>
+
+				<h3> Treating injuries </h3>
+				<p> ... </p>
+
+
+				<h3> Treating conditions </h3>
+				<p> ... </p>
+
+
+				<h3> Other first aid situations </h3>
+				<p> ... </p>
+
+				
+			</div>
+		</div>
+	</div>
+</div>
+	 
+
+<div class="FAQ-card">
+		<div class="header-FAQ">
+			<div class="header-text">
+
+				<h1> Frequently Asked Questions </h1>
+
+				<button type="button" class="collapsible"><h3> Question 1 </h3></button>
+				<div class="content">
+					<p> Basic info, in a nutshell </p>
+					<li> <a href = " "><h4> Link to Relevant Article </h4></a></li>
+				</div>
+
+				<button type="button" class="collapsible" style="max-height: 100%"><h3> Question 2 </h3></button>
+				<div class="content">
+					<p> Basic info, in a nutshell </p>
+					<li> <a href = " "><h4> Link to Relevant Article </h4></a></li>
+				</div>
+
+				<button type="button" class="collapsible"><h3> Question 3 </h3></button>
+				<div class="content">
+					<p> Basic info, in a nutshell </p>
+					<li> <a href = " "><h4> Link to Relevant Article </h4></a></li>
+				</div>
+
+				<button type="button" class="collapsible"><h3> Question 4 </h3></button>
+				<div class="content">
+					<p> Basic info, in a nutshell </p>
+					<li> <a href = " "><h4> Link to Relevant Article </h4></a></li>
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+		
+<!-- Collapsible function js code-->
+<script>
+var acc = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < acc.length; i++) 
+{
+  	acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+
+    if (panel.style.display === "block")
+    {
+      panel.style.display = "none";
+    } 
+    else 
+    {
+      panel.style.display = "block";
+    }
+  }
+);
+}
+
+</script>
 
 
 </body>	
 
 
 </html>
+
+
+		
+	
+<!--
+	<navbar id="main-navbar">
+		<a href="#"> <img src="../images/menu.png"> </a>
+		
+		<a href="../aboutus/aboutus.html"> <h4 id ="aboutus">About Us</h4> </a>
+		<a href="#"> <h4 id="stores">Stores</h4 > </a>
+		<input type="checkbox" id="menu-toggle">
+		 	<label id="trigger" for="menu-toggle"></label>
+		  	<label id="burger" for="menu-toggle"></label>
+		 	<ul id="menu">
+		    	<li><a href="#">Home</a></li>
+		 	   	<li><a href="#">About</a></li>
+		    	<li><a href="#">Portfolio</a></li>
+		    	<li><a href="#">Contact</a></li>
+			</ul> 
+
+
+	</navbar> -->

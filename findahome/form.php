@@ -25,8 +25,6 @@
 	
 	
 </head>
-
-
 <body>
 
 	<header>
@@ -45,10 +43,6 @@
 		<img src="../images/menu.png" onclick= "openSlideMenu()">
 		<h3> ⇛ Find A Home</h3>
 	</div>
-
-
-		
-	
 
 
 	<div id = "side-menu" class="side-nav">
