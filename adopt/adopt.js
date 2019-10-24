@@ -1,5 +1,5 @@
 // making a variable for submit button
-const btn = document.querySelector('#button');
+const btn = document.querySelector('.button');
 const popUp = document.getElementById('successful-submit');
 
 // Adding event listner for the submit button
