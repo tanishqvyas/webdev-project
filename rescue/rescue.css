@@ -114,6 +114,15 @@ span
     border-radius: 5px;
 }
 
+.content h3
+{
+    margin: 30px 0px;
+    background-color: #c4d2d2;
+    display: block;
+    padding: 20px 0px 20px 5px;
+    border-radius: 5px;
+}
+
 
 
 .info-card button
