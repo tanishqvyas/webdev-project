@@ -12,7 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="../layout/side_bar_style.css">
 
 	<link rel="stylesheet" type="text/css" href="generalcare.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
 
@@ -358,41 +362,10 @@
     <div class="content">
 			<h3>FAQs</h3>
 			
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>How often should I brush my pets teeth?</h2></button>
-
-				<div class="text-info">
-					<p>Every day is the gold standard, and a small amount of brushing every day will prevent the build up of plaque and formation of tartar, as well as increasing the bond between pet and owner. However any brushing is better than none, and brushing thoroughly 2-3 times a week should be enough to see a difference in overall oral health.</p>										
-				</div>
-			</div>
-
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>What's the difference between dog toothpaste and tooth gel?</h2></button>
-
-				<div class="text-info">
-					<p>Both products contain enzymes that fight bad bacteria and break down tartar, which prevents plaque from forming. The gel is designed for pets who don't really like having their teeth cleaned - you simply apply the gel to the teeth and the animal spreads it around itself with its tongue. Toothpaste offers a more robust defense against gum disease and tooth decay, as the action of actively brushing the teeth also helps to dislodge food particles and remove the bacterial films that go on to form tartar and plaque. The paste is also meat-flavored, which makes it readily accepted by pets!</p>										
-				</div>
-			</div>
 
 
 
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>My dog refuses to let me brush his teeth. Is there anything else I can do to help?</h2></button>
-
-				<div class="text-info">
-					<p>You can try using the Beaphar Tooth Gel. This requires no brushing, you simply apply a line of the enzyme-containing gel along his teeth, and let his rough tongue do all the work. If he even objects to this, keep him supplied with Beaphar Dental Sticks or Powder. The sticks can be given as a treat, but contain Green Tea Extract and algae that ensure the teeth are cleaned during the chewing process as well as after ingestion. Dental Powder is made out of 100% natural brown seaweed. The product can simply be added to your dog's regular meal. Brown seaweed counteracts bad breath and other dental problems by removing the underlying causes and encouraging the body's natural cleaning process long after ingestion. </p>										
-				</div>
-			</div>
-
-
-
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>What’s the best way to ensure my pet remains flea free?</h2></button>
-
-				<div class="text-info">
-					<p>For the best combination of efficacy and value for money, Beaphar recommends regular use of a Beaphar FIPROtec® Spot On and Beaphar Extra-Long Lasting Household Flea Spray. Ideally, these products should be applied before a significant flea problem has become established, as this will ensure maximum protection from fleas for the minimum number of product applications. If a serious flea problem is already present, quicker results may be achieved by using Beaphar Defest household flea spray together with Beaphar FIPROtec®.</p>										
-				</div>
-			</div>
+<!--
 
 
 			<div class="info-card">
@@ -410,13 +383,123 @@
 				<div class="text-info">
 					<p>Beaphar Lactol is full of vitamins and minerals that will help puppies grow into healthy fully-grown dogs (or other adult animals) The "impurities" you have noticed in the powder are vitamins as well. These will help your puppies in their physical development and growth to make sure that they will get all the nutrients they need. The specs are completely harmless to animals and will contribute to a healthy future!</p>										
 				</div>
-			</div>
+			</div> -->
 
 
 		</div>
 	</div>
 
+
 </div> <!-- Pusher ends here -->
+	<div class="accordion" id="accordionExample">
+		  <div class="card">
+		    <div class="card-header" id="headingOne">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          How often should I brush my pets teeth?
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Every day is the gold standard, and a small amount of brushing every day will prevent the build up of plaque and formation of tartar, as well as increasing the bond between pet and owner. However any brushing is better than none, and brushing thoroughly 2-3 times a week should be enough to see a difference in overall oral health.
+		      </div>
+		    </div>
+		  </div>
+
+
+		  <div class="card">
+		    <div class="card-header" id="headingTwo">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          What's the difference between dog toothpaste and tooth gel?
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		      <div class="card-body">
+		        Both products contain enzymes that fight bad bacteria and break down tartar, which prevents plaque from forming. The gel is designed for pets who don't really like having their teeth cleaned - you simply apply the gel to the teeth and the animal spreads it around itself with its tongue. Toothpaste offers a more robust defense against gum disease and tooth decay, as the action of actively brushing the teeth also helps to dislodge food particles and remove the bacterial films that go on to form tartar and plaque. The paste is also meat-flavored, which makes it readily accepted by pets!
+		      </div>
+		    </div>
+		  </div>
+
+
+		  <div class="card">
+		    <div class="card-header" id="headingThree">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          My dog refuses to let me brush his teeth. Is there anything else I can do to help?
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		      <div class="card-body">
+		        You can try using the Beaphar Tooth Gel. This requires no brushing, you simply apply a line of the enzyme-containing gel along his teeth, and let his rough tongue do all the work. If he even objects to this, keep him supplied with Beaphar Dental Sticks or Powder. The sticks can be given as a treat, but contain Green Tea Extract and algae that ensure the teeth are cleaned during the chewing process as well as after ingestion. Dental Powder is made out of 100% natural brown seaweed. The product can simply be added to your dog's regular meal. Brown seaweed counteracts bad breath and other dental problems by removing the underlying causes and encouraging the body's natural cleaning process long after ingestion.
+		      </div>
+		    </div>
+		  </div>
+
+
+
+		 <div class="card">
+		    <div class="card-header" id="headingFour">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+		          What’s the best way to ensure my pet remains flea free?
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+		      <div class="card-body">
+		        For the best combination of efficacy and value for money, Beaphar recommends regular use of a Beaphar FIPROtec® Spot On and Beaphar Extra-Long Lasting Household Flea Spray. Ideally, these products should be applied before a significant flea problem has become established, as this will ensure maximum protection from fleas for the minimum number of product applications. If a serious flea problem is already present, quicker results may be achieved by using Beaphar Defest household flea spray together with Beaphar FIPROtec®.
+		      </div>
+		    </div>
+		 </div>
+
+
+		 <div class="card">
+		    <div class="card-header" id="headingFive">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+		          My dog hates being washed - what can I do to clean him?
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+		      <div class="card-body">
+		       Most dogs aren't a particular fan of being washed. Not because they do not like water, but because it feels unnatural and they often don't understand what's happening. For dogs that can't stand being washed, we offer several Dry Shampoo Sprays. These can simply be sprayed upon the dog's coat, and dried off with a towel after having set in a while. These sprays are easy to use and the owner can save a lot of time. Except for the sprays, we also have Grooming Powders, which have a similar method of application. The powder has to be spread upon the coat, but can be dried off after a few minutes. No water needed!
+		      </div>
+		    </div>
+		 </div>
+
+
+		 <div class="card">
+		    <div class="card-header" id="headingSix">
+		      <h2 class="mb-0">
+		        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+		          My Lactol contains brown and black impurities - Is it safe to feed puppies with Lactol Powder?
+		        </button>
+		      </h2>
+		    </div>
+
+		    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+		      <div class="card-body">
+		       Beaphar Lactol is full of vitamins and minerals that will help puppies grow into healthy fully-grown dogs (or other adult animals) The "impurities" you have noticed in the powder are vitamins as well. These will help your puppies in their physical development and growth to make sure that they will get all the nutrients they need. The specs are completely harmless to animals and will contribute to a healthy future!
+		      </div>
+		    </div>
+		 </div>
+
+
+		  
+
+
+		</div>
+	</div> <!-- Pusher ends here -->
 
 		<div class="link-list">
 					<h3>Related links</h3>
