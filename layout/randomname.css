@@ -21,7 +21,7 @@ body
 
 }
 
-.container
+.containerr
 {
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
@@ -30,7 +30,7 @@ body
 
 }
 
-.container .title
+.containerr .title
 {
 	width: 90%;
 	height: 20%;
@@ -40,7 +40,7 @@ body
 
 }
 
-.container h1
+.containerr h1
 {
 	font-family: 'Lexend Deca', sans-serif;
 	font-size: 3rem;
@@ -48,7 +48,7 @@ body
 }
 
 
-.container p
+.containerr p
 {
 	font-family: 'Muli',sans-serif;
 	color:#000;
@@ -172,7 +172,7 @@ header img
 
 }
 
-.container
+.containerr
 {
 	box-shadow: 1px 3px 7px;
 	padding: 10px 10px 10px 20px;
