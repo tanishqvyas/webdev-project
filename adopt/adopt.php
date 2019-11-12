@@ -5,21 +5,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width = device-width,initial-scale = 0.2">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Landing Page</title>
+	<title>Adopt a Pet</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese">
 	<link rel="stylesheet" type="text/css" href="../layout/randomname.css">
 	<link rel="stylesheet" type="text/css" href="../layout/side_bar_style.css">
-	<link rel="stylesheet" type="text/css" href="adopt.css">
+	<link rel="stylesheet" type="text/css" href="adopt_style.php">
+
 
 
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
 
 	<script src="../layout/menu.js"></script>
-
-	<!--<style><? include_once "adopt.css" media =""  ?></style> -->
-
-	<?php require_once("adopt.css");?>
 	
 	
 </head>
@@ -98,6 +95,8 @@
 
 	<div class="info-card">
 		<div class="header-info">
+
+
 			<img src="../images/dogup.jpg" onerror="this.src='../images/dogup.jpg';">
 			<div class="header-text">
 				<h2 class="owner-name">Peter Parker</h2>
@@ -105,18 +104,21 @@
 				<h5 class="pet-age"><span>🎂</span> 3 Years Old</h4>
 				<h5 class="owner-address"><span>📍</span>  Bangalore, India</h3>
 			</div>
-		</div>
-		<div class="description">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+
 
 		</div>
+		
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
 
-		<button class="button">Request Adopt</button>
+			</div>
+
+			<button class="button">Request Adopt</button>
 
 	</div>
 
@@ -125,6 +127,8 @@
 
 	<div class="info-card">
 		<div class="header-info">
+
+
 			<img src="../images/dogup.jpg" onerror="this.src='../images/dogup.jpg';">
 			<div class="header-text">
 				<h2 class="owner-name">Peter Parker</h2>
@@ -132,24 +136,26 @@
 				<h5 class="pet-age"><span>🎂</span> 3 Years Old</h4>
 				<h5 class="owner-address"><span>📍</span>  Bangalore, India</h3>
 			</div>
-		</div>
-		<div class="description">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
+
 
 		</div>
+		
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>				
 
-		<button class="button">Request Adopt</button>
+			</div>
+
+			<button class="button">Request Adopt</button>
 
 	</div>
 	 
 	
 <?php
-
 
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
@@ -166,30 +172,29 @@ $sql = "SELECT * FROM `findahome`.`formdata`";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         
+		while($row = mysqli_fetch_array($result))
+		{
+	     	echo '<div class="info-card">';
+				echo '<div class="header-info">';
+						echo '<div class="header-text">';
+							echo'<h2 class="owner-name">' .$row['ownerName']. '</h2>';
+							echo'<h5 class="pet-name"><span>🐕</span>' .$row['petName']. '</h3>';
+							echo'<h5 class="pet-age"><span>🎂</span>'. $row['petAge']. '<span> Years Old</span></h4>';
+						echo '</div>';
 
-        echo '<div class="info-card">';
-		echo '<div class="header-info">';
-		//img src="../images/dogup.jpg" onerror="this.src='../images/dogup.jpg'";
-			echo '<div class="header-text">';
+				echo '</div>';
 
-			while($row = mysqli_fetch_array($result))
-			{
-			echo'<h2 class="owner-name">' .$row['ownerName']. '</h2>';
-			echo'<h5 class="pet-name"><span>🐕</span>' .$row['petName']. '</h3>';
-			//echo'<h5 class="owner-email">' .$row['ownerEmail']. '</h3>';
-			echo'<h5 class="pet-age"><span>🎂</span>'. $row['petAge']. '<span> Years Old</span></h4>';
-			//echo'<h5 class="owner-address"><span>📍</span>' .$row['city']. '</h3>';
+						echo '<div class="description">';
+							echo '<p>' .$row['petDescription'].'</p>';
+						echo '</div>';	
+
+				echo '<button class ="button">Request Adopt</button>';
+
 			echo '</div>';
-			echo '</div>';
-			echo '<div class="description">';
-			echo '<p>' .$row['petDescription'].'</p>';
-			}		
+}
+		
 
-		echo '</div>';
 
-		echo '<button id="button">Request Adopt</button>';
-
-	echo '</div>';
 
         // Free result set
         mysqli_free_result($result);
