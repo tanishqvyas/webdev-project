@@ -13,10 +13,13 @@
 	<link rel="stylesheet" type="text/css" href="adopt.css">
 
 
-
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
 
 	<script src="../layout/menu.js"></script>
+
+	<!--<style><? include_once "adopt.css" media =""  ?></style> -->
+
+	<?php require_once("adopt.css");?>
 	
 	
 </head>
@@ -146,6 +149,7 @@
 	 
 	
 <?php
+
 
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
