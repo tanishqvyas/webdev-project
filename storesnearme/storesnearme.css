@@ -12,6 +12,11 @@
 	background-color: #ffffff !important;
 }
 
+.card
+{
+	box-shadow: 1px 1px 5px !important;
+}
+
 
 #area-for-events
 {
