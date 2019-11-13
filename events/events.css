@@ -1,6 +1,8 @@
 #my-search-bar
 {
 	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
 }
 
 #my-search-bar nav
@@ -13,12 +15,17 @@
 #area-for-events
 {
 	margin-top: 25px;
+	width: 100%;
+	overflow-wrap: break-word;
 	display: inline-block;
+	padding: 20px 10px 20px 15px;
+
 }
 
 .my-event-card
 {
-	margin : 30px 25px 10px 25px;	
+	margin : 30px 60px;
+	display: inline-block;	
 }
 
 .card-body

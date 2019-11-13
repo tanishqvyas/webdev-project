@@ -1,0 +1,13 @@
+#my-search-bar
+{
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px; 
+}
+
+#my-search-bar nav
+{
+	border: 1px solid black !important;
+	border-radius: 10px !important;
+	background-color: #ffffff !important;
+}
