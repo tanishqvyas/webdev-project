@@ -89,9 +89,6 @@ header
 {
 	padding: 10px 10px 10px 0px;
 	display: flex;
-	/*border-radius: 0px 0px 10px 10px;
-	/*box-shadow: 1px 1px 4px;*/
-	/*margin-bottom: 10px;*/
 	background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%);
 
 }
@@ -99,6 +96,7 @@ header
 header h4
 {
 	font-weight: 100;
+
 }
 
 header img
