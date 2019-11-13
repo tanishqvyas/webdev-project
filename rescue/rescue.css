@@ -91,7 +91,7 @@ span
 
 #sidelist
 {
-	border: 10px solid red;
+    border: 10px solid red;
 }
 
 
@@ -171,3 +171,36 @@ span
 {
     margin-bottom: 10px;
 }
+
+
+/* styling of accordian menu begins here */
+
+.card-header
+{   
+    background-color:  #8baaaa !important;
+}
+
+.card-body
+{
+    background-color: #eef3f3 !important;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-bottom: 10px !important;
+}
+
+.mb-0 button
+{
+    color: black;
+    font-size: 20px;
+}
+
+.mb-0 button:hover
+{
+    text-decoration: none;
+    color: #eef3f3;
+}
+
+/* styling of accordian menu ends here */

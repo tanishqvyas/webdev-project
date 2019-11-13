@@ -12,6 +12,12 @@
 	<link rel="stylesheet" type="text/css" href="../layout/side_bar_style.css">
 	<link rel="stylesheet" type="text/css" href="rescue.css">
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
@@ -93,90 +99,144 @@
 		<div class="content">
 			<h3>Animal Welfare Organizations </h3>
 			
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>Charlie's Animal Rescue Centre (CARE)</h2></button>
 
-				<div class="text-info">
-					<p>Charlies Animal Rescue Centre – CARE established in January 2013. The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.</p>
+			<div class="accordion" id="accordionExample">
+		  
+			  	<div class="card">
+			    	<div class="card-header" id="headingOne">
+			      		<h2 class="mb-0">
+			        	<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			          Charlie's Animal Rescue Centre (CARE)
+			        	</button>
+			      		</h2>
+			    	</div>
 
-					<h5 class="phone-number"><span>📞</span> 9035999372</h5>
-					<h5 class="organisation-address"><span>📍</span> Survey No. 124/1 Mittaganahalli Cross, Near Reva College, Yelahanka, Bengaluru, Karnataka 560064</h5>
-					
+			    	<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+			      		<div class="card-body">
+			        	
+			        	Charlies Animal Rescue Centre – CARE established in January 2013. The inspiration behind the trust, is 15 year old Charlie, a differently abled, 3 legged Indian Dog who was an established figure in the field of canine therapy since 2005.
+			        	<br>
+			        	<span>📞</span> 9035999372
+			        	<br>
+						<span>📍</span> Survey No. 124/1 Mittaganahalli Cross, Near Reva College, Yelahanka, Bengaluru, Karnataka 560064
+			      		
+			      		</div>
+			    	</div>
+			  	</div>
+
+
+			  	<div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Save Animals India
+				        </button>
+				      </h2>
+				    </div>
+
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				      <div class="card-body">
+				        Involved in rescue, rehablitation and shelter of animals.
+				        <br>
+				        <span>📞</span> 999924342
+						<br>
+						<span>📍</span> Air Force base, UNASAMARANAHALLI Lake, behind Yelahanka, Bengaluru, Karnataka 562157
+
+				      </div>
+				    </div>
+
 				</div>
-			</div>
 
 
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>Save Animals India</h2></button>
+				<div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          CUPA Trauma Centre
+				        </button>
+				      </h2>
+				    </div>
 
-				<div class="text-info">
-					<p>Involved in rescue, rehablitation and shelter of animals.</p>
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body">
+				        For the rescue and treatment of sick and injured stray animals.
+				        <br>
+				        <span>📞</span> +91 080 22947300
+				        <br>
+						<span>📍</span> KVAFSU, Veterinary College Campus,Bellary Road, Hebbal, Bangalore 560024
 
-					<h5 class="phone-number"><span>📞</span> 999924342</h5>
-					<h5 class="organisation-address"><span>📍</span>Air Force base, UNASAMARANAHALLI Lake, behind Yelahanka, Bengaluru, Karnataka 562157</h5>
-					
+				      </div>
+				    </div>
 				</div>
-			</div>
 
 
+				<div class="card">
+				    <div class="card-header" id="headingFour">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				          KRUPA–Animal Hospital and Shelter
+				        </button>
+				      </h2>
+				    </div>
 
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>CUPA Trauma Centre</h2></button>
+				    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+				      <div class="card-body">
+				        NGO for Treatment and Rehabilitation of Animals.
+				        <br>
+				        <span>📞</span> 9880563690
+				        <br>
+						<span>📍</span> 16,7th Main Rd, Subash Nagar, Kengeri Satellite Town, Bengaluru, Karnataka 560060
 
-				<div class="text-info">
-					<p>For the rescue and treatment of sick and injured stray animals.</p>
-
-					<h5 class="phone-number"><span>📞</span> +91 080 22947300</h5>
-					<h5 class="organisation-address"><span>📍</span>KVAFSU, Veterinary College Campus,Bellary Road, Hebbal, Bangalore 560024</h5>
-					
+				      </div>
+				    </div>
 				</div>
-			</div>
 
 
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>KRUPA–Animal Hospital and Shelter</h2></button>
+				<div class="card">
+				    <div class="card-header" id="headingFive">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				          Large Animal Rescue & Rehabilitation Center
+				        </button>
+				      </h2>
+				    </div>
 
-				<div class="text-info">
-					<p>NGO for Treatment and Rehabilitation of Animals.</p>
+				    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+				      <div class="card-body">
+				       	For treatment of injured and abandoned bovines and equines.
+				       	<br>
+				       	<span>📞</span> +91 080 22947307/17
+				       	<br>
+						<span>📍</span> 32/1, Upadhayaya layout, Nagadevanahalli,Kengeri New Town,Bangalore
 
-					<h5 class="phone-number"><span>📞</span>9880563690</h5>
-					<h5 class="organisation-address"><span>📍</span>16,7th Main Rd, Subash Nagar, Kengeri Satellite Town, Bengaluru, Karnataka 560060</h5>
-					
+				      </div>
+				    </div>
 				</div>
-			</div>
 
 
+				<div class="card">
+				    <div class="card-header" id="headingSix">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				          Animal Aid Unlimited
+				        </button>
+				      </h2>
+				    </div>
 
+				    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+				      <div class="card-body">
+				       This Indian NGO runs a hospital and sanctuary for injured or ill street animals and rescues thousands a year. AAU runs an emergency rescue service for dogs, cows, donkeys, birds and cats and brings them to their hospital for medical treatment and they provide sanctuary for the disabled animals who need long time care or permanent homes. AAU was founded in 2002.
+				       <br>
+				       <span>📞</span> 09829843726
+				       <br>
+				       <span>📍</span> India
 
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>Large Animal Rescue & Rehabilitation Center</h2></button>
-
-				<div class="text-info">
-					<p>For treatment of injured and abandoned bovines and equines.</p>
-
-					<h5 class="phone-number"><span>📞</span>+91 080 22947307/17</h5>
-					<h5 class="organisation-address"><span>📍</span>32/1, Upadhayaya layout, Nagadevanahalli,Kengeri New Town,Bangalore</h5>
-					
+				      </div>
+				    </div>
 				</div>
+
+
 			</div>
-
-
-
-			<div class="info-card">
-				<button type="button" class="collapsible"><h2>Animal Aid Unlimited</h2></button>
-
-				<div class="text-info">
-					<p>This Indian NGO runs a hospital and sanctuary for injured or ill street animals and rescues thousands a year. AAU runs an emergency rescue service for dogs, cows, donkeys, birds and cats and brings them to their hospital for medical treatment and they provide sanctuary for the disabled animals who need long time care or permanent homes. AAU was founded in 2002.</p>
-
-					<h5 class="phone-number"><span>📞</span> 09829843726</h5>
-					<h5 class="organisation-address"><span>📍</span>India</h5>
-					
-				</div>
-			</div>
-
-
-
-
 
 		</div> <!--content-->
 
@@ -184,63 +244,104 @@
 
 		<div class="content">
 			<h3>Handling Animals Involved in Accidents </h3>
-			<p>Listed below are some basic facts and procedures to be followed in case of emergencies </p>				
-				<h4>Assessing the situation</h4>
-				<br>
-				<ol>
-				<li> Decide if it is safe to approach and take action to minimise or remove any hazards to your own safety and the safety of the animal. This might involve switching on vehicle hazard lights to warn traffic of an incident on the road or keeping birds or other animals away.</li>
-				<li>Observe the animal for signs of injury or illness and abnormal behaviour </li>
-				<li>Always approach with care. The animal will be scared and will try to run away, bite and scratch you. </li>
-				<li>If the animal can be handled, safely confine it in a manner that is appropriate for a closer health assessment. (e.g. wrap it in a towel or handling bag, covering its eyesand place it in a cardboard box). Ensure the animal can breathe.</li>
-				<li>Assess the animal’s health - level of consciousness, external injuries/abnormalities, body condition,respiratory rate, heart rate, temperature, paralysis etc.</li>
-				<li>Take note of where the animal has been found, street name, GPS reading etc, so that if needed it can be released back where it came from. </li>
-				</ol>
+			
+			<div class="accordion" id="accordionExample">
+		  
+				  <div class="card">
+				    <div class="card-header" id="headingOne">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Assessing the situation
+				        </button>
+				      </h2>
+				    </div>
 
-				<br>
-				<h4>Treating injuries </h4>
-				<br>
-				<ol>
-				<li> Bleeding</li>
-				<p>Even when an animal has no obvious wounds it may still be bleeding internally. Internal bleeding can be hard to diagnose. Some signs of internal bleeding include coughing up or vomiting blood, a bloated abdomen, difficulty breathing. If internal bleeding is suspected then the animal is likely to have a poor prognosis if left untreated. External bleeding can be treated by applying direct pressure to the wound until it stops. For severe bleeding, a pressure bandage can be applied, and should the bleeding come through the bandage, another bandage should be applied over the top. Never take the first bandage off. If the animal has lost large amounts of blood it is likely to have a poor prognosis if left untreated</p>
+				    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+				      <div class="card-body">
+						<ol>
+						<li> Decide if it is safe to approach and take action to minimise or remove any hazards to your own safety and the safety of the animal. This might involve switching on vehicle hazard lights to warn traffic of an incident on the road or keeping birds or other animals away.</li>
+						<li>Observe the animal for signs of injury or illness and abnormal behaviour </li>
+						<li>Always approach with care. The animal will be scared and will try to run away, bite and scratch you. </li>
+						<li>If the animal can be handled, safely confine it in a manner that is appropriate for a closer health assessment. (e.g. wrap it in a towel or handling bag, covering its eyesand place it in a cardboard box). Ensure the animal can breathe.</li>
+						<li>Assess the animal’s health - level of consciousness, external injuries/abnormalities, body condition,respiratory rate, heart rate, temperature, paralysis etc.</li>
+						<li>Take note of where the animal has been found, street name, GPS reading etc, so that if needed it can be released back where it came from. </li>
+						</ol>
+				      </div>
+				    </div>
+				</div>
 
 
-				<li>Wounds </li>
-				<p>Types of wounds can include abrasions, open wounds (e.g. cuts), and penetrating wounds (e.g. animal bites or due to a foreign object). The biggest problem with wounds is the possibility of infection.  The wound needs to be cleaned thoroughly and generally the animal can be released. If too large or deep it will require veterinary care or euthanasia. </p>
+				<div class="card">
+				    <div class="card-header" id="headingTwo">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				          Treating injuries
+				        </button>
+				      </h2>
+				    </div>
 
-				<li>Fractures, sprains and strains </li>
-				<p>Symptoms of sprains and strains are similar to fractures and if in doubt should be treated as closed fractures. A temporary splint and/or bandaging may be applied in the field to stabilise the injury prior to veterinary attention being sought, if the animal will tolerate it with minimal additional stress. If a fracture is suspected then the animal is likely to have a poor prognosis if left untreated. A decision to euthanase or seek veterinary attention will need to be made. It must be kept in mind that healing time for fractures is a minimum of 6 weeks with no guarantee of a full return to the wild. </p>
+				    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				      <div class="card-body">
+				        <ol>
+							<li> Bleeding</li>
+							<p>Even when an animal has no obvious wounds it may still be bleeding internally. Internal bleeding can be hard to diagnose. Some signs of internal bleeding include coughing up or vomiting blood, a bloated abdomen, difficulty breathing. If internal bleeding is suspected then the animal is likely to have a poor prognosis if left untreated. External bleeding can be treated by applying direct pressure to the wound until it stops. For severe bleeding, a pressure bandage can be applied, and should the bleeding come through the bandage, another bandage should be applied over the top. Never take the first bandage off. If the animal has lost large amounts of blood it is likely to have a poor prognosis if left untreated</p>
 
-				<li>Head and spinal injuries</li>
-				<p>Signs include unconsciousness, abnormal behaviour, blood or clear fluid coming from the nose or ears and unequal pupil size. The most common cause of spinal injuries is through collision with a motor vehicle. If spinal injuries are suspected (e.g. weakness in hindquarters, pain, partial or total paralysis) handling must be done very carefully. Euthanasia may be the only option for an animal with spinal injuries.  </p>
 
-				<li>Eye Injuries </li>
-				<p>A foreign object in the eye can cause discharge and redness, with the animal rubbing or pawing at the eye. The eye can be opened to examine it, and the foreign material can be washed out with clean water. If this doesn’t work attempts can be made to remove the object if possible, however never try and remove if the object is penetrating the globe. Any attempt to remove any foreign material by means other than flushing (using sterile saline or fresh water) in a conscious animal is likely to risk additional injury to the eye. </p>
+							<li>Wounds </li>
+							<p>Types of wounds can include abrasions, open wounds (e.g. cuts), and penetrating wounds (e.g. animal bites or due to a foreign object). The biggest problem with wounds is the possibility of infection.  The wound needs to be cleaned thoroughly and generally the animal can be released. If too large or deep it will require veterinary care or euthanasia. </p>
 
-				</ol>
+							<li>Fractures, sprains and strains </li>
+							<p>Symptoms of sprains and strains are similar to fractures and if in doubt should be treated as closed fractures. A temporary splint and/or bandaging may be applied in the field to stabilise the injury prior to veterinary attention being sought, if the animal will tolerate it with minimal additional stress. If a fracture is suspected then the animal is likely to have a poor prognosis if left untreated. A decision to euthanase or seek veterinary attention will need to be made. It must be kept in mind that healing time for fractures is a minimum of 6 weeks with no guarantee of a full return to the wild. </p>
 
-				<br>
-				<h4>Treating conditions  </h4>
-				<br>
+							<li>Head and spinal injuries</li>
+							<p>Signs include unconsciousness, abnormal behaviour, blood or clear fluid coming from the nose or ears and unequal pupil size. The most common cause of spinal injuries is through collision with a motor vehicle. If spinal injuries are suspected (e.g. weakness in hindquarters, pain, partial or total paralysis) handling must be done very carefully. Euthanasia may be the only option for an animal with spinal injuries.  </p>
 
-				<ol>
-					<li>Stress</li>
-					<p>Signs of stress include:</p>
-					<ul>
-						<li>trying to attack or escape </li>
-						<li>reduced activity or listlessness </li>
-						<li>grinding teeth </li>
-						<li> licking of forearms/shoulders/chest/hind limbs or flank</li>
-					</ul>
-					<p>The best way to treat stress is by placing the animal in a dark, quiet, warm (but not too warm) environment to allow them to calm down</p> 
+							<li>Eye Injuries </li>
+							<p>A foreign object in the eye can cause discharge and redness, with the animal rubbing or pawing at the eye. The eye can be opened to examine it, and the foreign material can be washed out with clean water. If this doesn’t work attempts can be made to remove the object if possible, however never try and remove if the object is penetrating the globe. Any attempt to remove any foreign material by means other than flushing (using sterile saline or fresh water) in a conscious animal is likely to risk additional injury to the eye. </p>
 
-					<li> Shock </li>
-					<p>Shock is a result of a collapsed circulatory system and can occur due to stress, blood loss, fluid loss, low blood pressure and a damaged heart. Many animals which are badly injured show signs of shock. Signs of shock include rapid pulse or breathing, hypothermia (eg. mammals may shiver and birds fluff their feathers) and pale/white gums. The signs of shock are not always obvious and can develop over time. An animal in shock is usually still, quiet and cold. Treatment for shock should first aim at reducing stress (e.g. covering the animal’s eyes), stopping any visible signs of bleeding and then making sure the animal is kept warm and quiet. </p>
+							</ol>
+				      </div>
+				    </div>
+				</div>
 
-					<li> Dehydration </li>
-					<p>It is important not to offer fluid therapy to an animal until it is warm and its condition has stabilised. The best way to offer fluids (e.g. water or Lectade ®) to an animal is by placing a shallow container of water in with them as long as they cannot tip it and get wet. If they are unable to drink by themselves you can wet your fingers and touch the animals mouth, this usually results in a swallow response. NEVER pour water down an animal’s throat </p>
 
-					<li>Concussion </li>
-					<p>If an animal appears concussed (e.g. from hitting side of net, or flying into car window), it should be placed in a dark environment (do not provide extra heat) and rechecked in 2-4 hours to reassess the situation (e.g. its ability to fly). It is recommended that animals suffering concussion should not be released until after 24 hours to allow for complete recovery. </p>
+				<div class="card">
+				    <div class="card-header" id="headingThree">
+				      <h2 class="mb-0">
+				        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				          Treating conditions 
+				        </button>
+				      </h2>
+				    </div>
+
+				    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				      <div class="card-body">
+				        <ol>
+							<li>Stress</li>
+							<p>Signs of stress include:</p>
+							<ul>
+								<li>trying to attack or escape </li>
+								<li>reduced activity or listlessness </li>
+								<li>grinding teeth </li>
+								<li> licking of forearms/shoulders/chest/hind limbs or flank</li>
+							</ul>
+							<p>The best way to treat stress is by placing the animal in a dark, quiet, warm (but not too warm) environment to allow them to calm down</p> 
+
+							<li> Shock </li>
+							<p>Shock is a result of a collapsed circulatory system and can occur due to stress, blood loss, fluid loss, low blood pressure and a damaged heart. Many animals which are badly injured show signs of shock. Signs of shock include rapid pulse or breathing, hypothermia (eg. mammals may shiver and birds fluff their feathers) and pale/white gums. The signs of shock are not always obvious and can develop over time. An animal in shock is usually still, quiet and cold. Treatment for shock should first aim at reducing stress (e.g. covering the animal’s eyes), stopping any visible signs of bleeding and then making sure the animal is kept warm and quiet. </p>
+
+							<li> Dehydration </li>
+							<p>It is important not to offer fluid therapy to an animal until it is warm and its condition has stabilised. The best way to offer fluids (e.g. water or Lectade ®) to an animal is by placing a shallow container of water in with them as long as they cannot tip it and get wet. If they are unable to drink by themselves you can wet your fingers and touch the animals mouth, this usually results in a swallow response. NEVER pour water down an animal’s throat </p>
+
+							<li>Concussion </li>
+							<p>If an animal appears concussed (e.g. from hitting side of net, or flying into car window), it should be placed in a dark environment (do not provide extra heat) and rechecked in 2-4 hours to reassess the situation (e.g. its ability to fly). It is recommended that animals suffering concussion should not be released until after 24 hours to allow for complete recovery. </p>
+						</ol>
+				      </div>
+				    </div>
+				</div>
+
+
+			</div> <!-- accordian end -->
 
 
 </body>	
