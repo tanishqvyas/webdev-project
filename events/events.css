@@ -1,0 +1,77 @@
+#my-search-bar
+{
+	margin-top: 20px;
+}
+
+#my-search-bar nav
+{
+	border: 1px solid black !important;
+	border-radius: 10px !important;
+	background-color: #ffffff !important;
+}
+
+#area-for-events
+{
+	margin-top: 25px;
+	display: inline-block;
+}
+
+.my-event-card
+{
+	margin : 30px 25px 10px 25px;	
+}
+
+.card-body
+{
+	background-color: #afcfcf !important;
+}
+
+.card-body h5
+{
+	font-weight: 600 !important;
+}
+
+.card
+{
+	border-bottom: 1px solid black !important;
+	
+}
+
+.card ul li
+{
+	background-color: #f4f4f4 !important ;
+}
+
+
+
+
+.button
+{
+	background-color: #4ccb55;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	left: 0px;
+}
+
+.button a
+{
+	color: white;
+}
+
+.button a:hover
+{
+	color: black;
+	text-decoration: none;
+}
+
+.button:hover
+{
+	background-color: #5cb863;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+}
