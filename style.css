@@ -81,7 +81,6 @@ body
 {
 	box-shadow: 1px 3px 30px;
 	padding: 10px;
-	
 	display: grid;
 	height: calc(100vh - 20px);
 	grid-template-columns: repeat(2,1fr);

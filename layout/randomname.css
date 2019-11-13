@@ -79,107 +79,127 @@ html
 
 body
 {
-	margin:0px;
-	padding: 0px;
-	background-color: #e1eded;
+	margin:0px !important;
+	padding: 0px !important;
+	background-color: #e1eded !important;
 
 }
 
 header
 {
-	padding: 10px 10px 10px 0px;
-	display: flex;
-	background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%);
+	padding: 10px 10px 10px 0px !important;
+	display: flex !important;
+	background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%)!important;
 
+}
+
+
+header h1
+{
+	margin: 0px !important;
+	font-weight: bold !important;
+	font-size: 25px !important;
+	color: black !important;
+}
+
+header h2
+{	
+	margin: 0px !important;
+	font-weight: bold !important;
+	font-size: 25px !important;
+	color: black !important;
 }
 
 header h4
 {
-	font-weight: 100;
-
+	font-weight: 100 !important;
+	font-size: 15px !important;
+	color: black !important;	
 }
 
 header img
 {
-	height: 90px;
+	height: 90px !important;
 
 }
 
 #main
 {
-	display: flex;
-	position: sticky;
-	top:0px;
-	margin: 0px;
-	padding: 10px 10px 10px 25px;
-	border-radius: 0px 0px 10px 10px;
-	box-shadow: 1px 2px 2px;
-	border-top: 2px black solid;
-	background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%);
-	z-index: 100;
+	display: flex !important;
+	position: sticky !important;
+	top:0px !important;
+	margin: 0px !important;
+	padding: 10px 10px 10px 25px !important;
+	border-radius: 0px 0px 10px 10px !important;
+	box-shadow: 1px 2px 2px !important;
+	border-top: 2px black solid !important;
+	background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%) !important;
+	z-index: 100 !important;
 
 }
 
 #main h3
 {
-	margin-left: 10px;
-	position: relative;
-	top: 7px;
-	right:2px;
-	font-weight: 500;
+	margin-left: 10px !important;
+	position: relative !important;
+	top: 7px !important;
+	right:2px !important;
+	font-weight: 500 !important;
+	color: black !important;
+	font-size: 19px !important;
 }
 
 
 
 #main h4
 {
-	border-radius: 23px;
-	margin-left: 10px;
-	margin-right:10px; 
-	position: absolute;
-	padding: 11px 10px;
+	border-radius: 23px !important;
+	margin-left: 10px !important;
+	margin-right:10px !important; 
+	position: absolute !important;
+	padding: 11px 10px !important;
 
 }
 
 #main h4:hover
 {
-	border:2px white solid;
-	border-radius: 23px;
-	margin-left: 10px;
-	margin-right:10px; 
-	position: absolute;
-	padding: 10px 10px;
-	background-color: #8baaaa;
-	color: white;
+	border:2px white solid !important;
+	border-radius: 23px !important;
+	margin-left: 10px !important;
+	margin-right:10px !important; 
+	position: absolute !important;
+	padding: 10px 10px !important;
+	background-color: #8baaaa !important;
+	color: white !important;
 }
 
 
 #aboutus
 {
-	right: 100px;
+	right: 100px !important;
 }
 
 #stores
 {
-	right: 30px;
+	right: 30px !important;
 }
 
 #main img
 {
-	height: 35px;
+	height: 35px !important;
 
 }
 
 .containerr
 {
-	box-shadow: 1px 3px 7px;
-	padding: 10px 10px 10px 20px;
-	margin: 10px 10px 10px 10px; 
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	overflow: hidden;
-	background-color: #eef3f3;
-	border-radius: 20px;
+	box-shadow: 1px 3px 7px !important;
+	padding: 10px 10px 10px 20px !important;
+	margin: 10px 10px 10px 10px !important; 
+	display: grid !important;
+	grid-template-columns: repeat(2,1fr) !important;
+	overflow: hidden !important;
+	background-color: #eef3f3 !important;
+	border-radius: 20px !important;
 }
 
 
