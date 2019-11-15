@@ -1,0 +1,46 @@
+<?php
+    header("Content-type: text/css; charset: UTF-8");
+
+?>
+
+#my-search-bar
+{
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px; 
+}
+
+#my-search-bar nav
+{
+	border: 1px solid black !important;
+	border-radius: 10px !important;
+	background-color: #ffffff !important;
+}
+
+
+#area-for-events
+{
+	margin-top: 25px;
+	width: 100%;
+	overflow-wrap: break-word;
+	display: inline-block;
+	padding: 20px 50px 20px 50px;
+
+}
+
+.card
+{
+	box-shadow: 1px 1px 5px !important;
+}
+
+.card-title
+{
+	font-weight: 900 !important;
+}
+
+.shop-longitude, .shop-lattitude
+{
+	height: 0px;
+	width:0px;
+	opacity: 0;
+}
