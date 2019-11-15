@@ -23,6 +23,14 @@
 	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
 
 	<script src="../layout/menu.js"></script>
+
+	<style>
+		.my-shop-map{
+			height : 400px;
+			width : 500px;
+		}
+		
+	</style>
 	
 	
 </head>
@@ -117,7 +125,6 @@
 
 		<div class="card mb-3">
 		  	<div class="my-shop-map">
-		  		
 
 		  	</div>
 
@@ -126,14 +133,14 @@
 		    	<p class="card-text">670, CMH Road, Opp. Royal Oaks, Indiranagar, Bengaluru</p>
 			    <p class="card-text"><small class="text-muted">Contact : 9620208757</small></p>
 			    <div class="shop-longitude">77.645</div>
-			    <div class="shop-lattitude">12.97212</div>
+				<div class="shop-lattitude">12.97212</div>
+				<div class="shop-center">Bangalore</div>
 			</div>
 		</div>
 
 
 		<div class="card mb-3">
 		  	<div class="my-shop-map">
-		  		
 
 		  	</div>
 
@@ -141,14 +148,48 @@
 		    	<h5 class="card-title">Glenands</h5>
 		    	<p class="card-text">670, CMH Road, Opp. Royal Oaks, Indiranagar, Bengaluru</p>
 			    <p class="card-text"><small class="text-muted">Contact : 9620208757</small></p>
-			    <div class="shop-longitude">77.645</div>
-			    <div class="shop-lattitude">12.97212</div>
+			    <div class="shop-longitude">78.92798</div>
+				<div class="shop-lattitude">12.97212</div>
+				<div class="shop-center">Bangalore</div>
 			</div>
 		</div>
 		
 
 	</div>
 	
+
+	<script>
+
+		function initMap(){
+			var options = {
+                zoom : 12, 
+                center:{lat: 12.9716 , lng:77.5946 }
+            }    
+			var cards = document.querySelectorAll('.card');
+			// var coords = [];
+			// for(i=0;i<cards.length;i++)
+			// {
+			// 	var coords[i] = [{lat : cards[i].querySelector('.shop-latitude').textContent , lng : cards[i].querySelector('.shop-latitude').textContent }]
+			// }
+
+			for(i=0;i<cards.length;i++)
+			{
+				var longitude = cards[i].querySelector('.shop-longitude').textContent;
+				var latitude = cards[i].querySelector('.shop-latitude').textContent;
+				
+				var coords = {lat : latitude , lng : longitude};
+				var maparea = cards[i].querySelector('.my-shop-map');
+				var map = new google.maps.Map(maparea,options);
+				var marker = new google.maps.Marker({position: coords, map: map });
+			}	
+		}
+
+	
+	</script>
+	
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA9p52wyN1peD4pir5roFPNgyG1F-dG9c&callback=initMap">
+    </script>
 
 
 </body>	
