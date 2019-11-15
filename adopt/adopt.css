@@ -75,6 +75,12 @@ span
 	margin-bottom: 25px;
 }
 
+.owner-email
+{
+	height: 0px;
+	width : 0px;
+	opacity: 0;
+}
 
 .button
 {
