@@ -44,3 +44,19 @@
 	width:0px;
 	opacity: 0;
 }
+
+.select-city
+{
+	position: absolute;
+	right: 100px;
+	height : 100px;
+	border-style: solid;
+	border-color:#537ADE;
+	border-radius: 25px;
+	width: 300px;
+	background-color:  #2FAE9E;
+	font-family: roboto;
+	font-size: 32px;
+	color: white;
+
+}

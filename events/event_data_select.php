@@ -127,9 +127,9 @@
                   '</div>'.
 
                   '<ul class="list-group list-group-flush">'.
-                      '<li class="list-group-item">'.$row["address"].'</li>'.
-                      '<li class="list-group-item">'.$row["city"].'</li>'.
-                      '<li class="list-group-item">'.$row["date"].'</li>'.
+                      '<li class="list-group-item">'.'📍'.$row["address"].'</li>'.
+                      '<li class="list-group-item">'.'🏙️'.$row["city"].'</li>'.
+                      '<li class="list-group-item">'.'📆'.$row["date"].'</li>'.
                   '</ul>'.
 
                 '</div>'.
@@ -153,7 +153,7 @@
            <br /><br />  
            
                 <h3>  
-                     <select name="city" id="city">  
+                     <select class ="select-city" id="city">  
                           <option value="">Events across all cities</option>  
                           <?php echo fill_city($connect); ?>  
                      </select>  

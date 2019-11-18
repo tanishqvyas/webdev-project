@@ -1,0 +1,65 @@
+.container
+{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	overflow: hidden;
+}
+
+.container h3
+{
+	padding: 10px 0px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	border-bottom: 2px grey solid;
+}
+
+
+
+.grid-container
+{
+	padding: 30px;
+}
+
+#grid-img
+{
+	height: 320px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+
+.button
+{
+	background-color: #4ccb55;
+	border-radius: 40px;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	left: 0px;
+}
+
+.button:hover
+{
+	background-color: #5cb863;
+	border-radius: 40px;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.grid-container p
+{
+	margin-bottom: 35px;
+}
+
+#result
+{
+	margin:40px 0px;
+	font-weight: 700;
+	font-size: 80px;
+	font-family: Comic Sans MS;
+	color: grey;
+}

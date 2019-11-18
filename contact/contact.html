@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width = device-width,initial-scale = 0.2">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Landing Page</title>
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese">
+	<link rel="stylesheet" type="text/css" href="../layout/randomname.css">
+	<link rel="stylesheet" type="text/css" href="../layout/side_bar_style.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+
+	<script src="https://kit.fontawesome.com/57217439de.js" crossorigin="anonymous"></script>
+
+	<script src="../layout/menu.js"></script>
+	
+	
+</head>
+
+
+<body>
+
+	<header>
+
+		<a href="../index.html">
+			<img src="../images/logo.png">
+			<div>
+				<h1>Destination</h1>
+				<h2>Kennel</h2>
+				<h4>We are your helping paws 🐾</h4>
+			</div>
+		</a>
+
+	</header>
+
+	
+	<div id = "main">
+		<img src="../images/menu.png" onclick= "openSlideMenu()">
+		<h3> ⇛ Name For Pet</h3>
+	</div>
+
+
+	<div id = "side-menu" class="side-nav">
+		<a href="#" class = "btn-close" onclick="closeSlideMenu()">↩</a>
+				
+		<div id = "menu-header">
+			<img src="../images/logo.png">
+			<div>
+				<h1>Destination</h1>
+				<h2>Kennel</h2>
+				<h4>We are your helping paws 🐾</h4>
+			</div>
+		</div>
+		<hr style="background-color: black;">
+
+		<ul>
+            <li><a href="../findahome/findahome.html" ><i class="fas fa-home"  ></i> Find a Home</a></li>
+            
+            <li><a href="../temporarykennel/temporarykennel.html" ><i class="fas fa-home"  ></i> Temporary Kennels</a></li>
+            
+            <li><a href="../adopt/adopt.html" ><i class="fas fa-paw"  ></i> Adopt</a></li>
+            
+            <li><a href="../rescue/rescue.html" ><i class="fas fa-first-aid"  ></i> Rescue</a></li>
+            
+            <li><a href="../storesnearme/storesnearme.html" ><i class="fas fa-shopping-cart"  ></i> Pet Stores near me</a></li>
+            
+            <li><a href="../trainer/trainer.html" ><i class="fas fa-user"  ></i> Pet Trainer</a></li>
+            
+            <li><a href="../vet/vet.html" ><i class="fas fa-user-md" ></i> Contact A Vet</a></li>
+            
+            <li><a href="../generalcare/generalcare.html" ><i class="fas fa-paw" ></i> General Pet Care</a></li>
+            
+            <li><a href="../donate/donate.html" ><i class="fas fa-hand-holding-usd"></i> Donate</a></li>
+            
+            <li><a href="../events/events.html" ><i class="far fa-list-alt"></i> Events</a></li>
+            
+            <li><a href="../goodbye/goodbye.html" ><i class="fas fa-sad-tear"></i> Saying Goodbye</a></li>
+            
+            <li><a href=""  onclick="closeSlideMenu()"><i class="fas fa-address-book" ></i> Name For Pet?</a></li>
+
+		</ul>
+			
+	</div>
+
+
+
+	<div class="container">
+
+	<div class="grid-container">
+		
+		<h3>Looking for a suitable name for your Pet?</h3>
+		<img src="https://placedog.net/640/480?random" onerror="this.src='images/dogup.jpg';" id="grid-img">
+
+	</div>	
+	
+
+	<div class="grid-container">
+		<p>Looking for a name for your pet? Try our name generator by clicking on the Generate Name button. If you didn't like it, then hit the button again to generate a new name. Its that simple.
+		</p>
+		<div>
+			<button onclick="generate()" onfocus="onfocusFun()" class="button">Generate Name</button>
+    		<div id="result"></div>
+    	</div>
+	</div>
+	
+		
+
+
+	</div> <!--container ends--> 
+
+	
+    <script src = 'script.js'></script>
+</body>	
+
+
+</html>

@@ -17,8 +17,26 @@
 
       while($row = mysqli_fetch_array($result))  
       {  
-$output .= '<div class="col-md-3">'.'<div style="border:1px solid #ccc; padding:20px; margin-bottom:20px;">'.$row["name"].''.$row["date"].''.$row["address"].''."<a href = ".$row["link"]."  >Click here for more info </a>  ".'</div>'.'</div>';  
-      }  
+$output .= 
+           ' <div id="area-for-events">' .
+              '<div class="my-event-card">' . 
+                '<div class="card" style="width: 100rem;">'.
+
+                  '<div class="card-body">'.
+                      '<h2 class="card-title">'.$row["name"].'</h2>' .
+                      '<p class="card-text">' .$row["details"].'</p>' .
+                  '</div>'.
+
+                  '<ul class="list-group list-group-flush">'.
+                      '<li class="list-group-item">'.$row["address"].'</li>'.
+                      '<li class="list-group-item">'.$row["city"].'</li>'.
+                      '<li class="list-group-item">'.$row["date"].'</li>'.
+                  '</ul>'.
+
+                '</div>'.
+            '</div>'.
+            '</div>';
+  }  
       echo $output;  
  }  
  ?>  
