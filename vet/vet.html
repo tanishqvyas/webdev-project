@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width = device-width,initial-scale = 0.2">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Landing Page</title>
+	<title>Contact a Vet</title>
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend+Deca|Muli&display=swap&subset=vietnamese">
 	<link rel="stylesheet" type="text/css" href="../layout/randomname.css">
@@ -22,6 +22,13 @@
 
 	<script src="../layout/menu.js"></script>
 	
+	<style>
+		.my-shop-map{
+			height : 400px;
+			width : 500px;
+		}
+		
+	</style>
 	
 </head>
 
@@ -140,7 +147,35 @@
 			    <div class="shop-lattitude">12.96557</div>
 			</div>
 		</div>
+	</div>
+
+	<script>
+
+		function initMap(){
+			var options = {
+                zoom : 12, 
+                center:{lat: 12.9716 , lng:77.5946 }
+            }    
+			var cards = document.querySelectorAll('.card');
+
+
+			for(i=0;i<cards.length;i++)
+			{
+				var longitude = cards[i].querySelector('.shop-longitude').textContent;
+				var latitude = cards[i].querySelector('.shop-lattitude').textContent;
+				var coords = {lat : parseFloat(latitude) , lng : parseFloat(longitude)};
+				var maparea = cards[i].querySelector('.my-shop-map');
+				var map = new google.maps.Map(maparea,options);
+				var marker = new google.maps.Marker({position: coords,animation:google.maps.Animation.BOUNCE ,map: map });
+			}	
+		}
+
 	
+	</script>
+	
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA9p52wyN1peD4pir5roFPNgyG1F-dG9c&callback=initMap">
+    </script>
 
 
 </body>	
