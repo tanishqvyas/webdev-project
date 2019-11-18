@@ -100,7 +100,6 @@
 
 <?php   
  //load_data_select.php 
-
  $connect = mysqli_connect("localhost", "root", "");  
  function fill_city($connect)  
  {  
@@ -113,7 +112,6 @@
       }  
       return $output;  
  }  
-
  function fill_vet($connect)  
  {  
       $output = '';  
@@ -123,22 +121,19 @@
       while($row = mysqli_fetch_array($result))  
       
       {  
-
       	 $output .= 
            ' <div id="area-for-events">' .
               //'<div class="card mb-3">' .
            		'<div class="card mb-3" style="width: 100rem;">'.
               	//'<div class="my-shop-map">'.
 		  		
-
 		  		//'</div>'. 
-
 		  		'<div class="card-body">'.
 			  		'<h2 class="card-title">'. $row["name"].'</h2>'.
-			  		'<p class="card-text">' .$row["address"].'</p>'.
-				    '<p class="card-text">'.'<small class="text-muted">'.$row["contact"] .'</small>'.'</p>'.
+			  		'<p class="card-text">' . '📍'. $row["address"].'</p>'.
+				    '<p class="card-text">'.'<small class="text-muted">'. '☎'. $row["contact"] .'</small>'.'</p>'.
 				    '<div class="shop-longitude">'. $row["Latitude"] .'</div>'.
-				    '<div class="shop-lattitude">'.$row["Longitude"].'</div>'.
+				    '<div class="shop-lattitude">'. $row["Longitude"].'</div>'.
 			'</div>'.
 			'</div>'.
 		'</div>'
@@ -148,8 +143,6 @@
       }   
       return $output;  
  }  
-
-
  ?>  
  <!DOCTYPE html>  
  <html>  
@@ -161,7 +154,7 @@
            <br /><br />  
             
                 <h3>  
-                     <select name="city" id="city">  
+                     <select class ="select-city" id="city">  
                           <option value="">Vets across all cities</option>  
                           <?php echo fill_city($connect); ?>  
                      </select>  
@@ -204,16 +197,11 @@
 	 		</form>
 		</nav>
 	</div>
-
-
 	<div id="area-for-events">
-
 		<div class="card mb-3">
 		  	<div class="my-shop-map">
 		  		
-
 		  	</div>
-
 		  	<div class="card-body">
 		    	<h5 class="card-title">Parkside Pet clinic And Pet Shop</h5>
 		    	<p class="card-text">No 3C-201, Ground Floor, 2nd Main Rd, behind Five Strar Chicken, Kasturi Nagar</p>
@@ -222,14 +210,10 @@
 			    <div class="shop-lattitude">12.96557</div>
 			</div>
 		</div>
-
-
 		<div class="card mb-3">
 		  	<div class="my-shop-map">
 		  		
-
 		  	</div>
-
 		  	<div class="card-body">
 		    	<h5 class="card-title">Parkside Pet clinic And Pet Shop</h5>
 		    	<p class="card-text">No 3C-201, Ground Floor, 2nd Main Rd, behind Five Strar Chicken, Kasturi Nagar</p>
@@ -239,11 +223,6 @@
 			</div>
 		</div>
 	
-
-
 </body>	
-
-
-
            
 </html> -->

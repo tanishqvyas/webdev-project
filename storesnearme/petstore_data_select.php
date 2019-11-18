@@ -141,8 +141,8 @@
 
 		  		'<div class="card-body">'.
 			  		'<h2 class="card-title">'. $row["name"].'</h2>'.
-			  		'<p class="card-text">' .$row["address"].'</p>'.
-				    '<p class="card-text">'.'<small class="text-muted">'.$row["contact"] .'</small>'.'</p>'.
+			  		'<p class="card-text">'.'📍'.$row["address"].'</p>'.
+				    '<p class="card-text">'.'<small class="text-muted">'.'☎'.$row["contact"] .'</small>'.'</p>'.
 				    '<div class="shop-longitude">'. $row["Latitude"] .'</div>'.
 				    '<div class="shop-lattitude">'.$row["Longitude"].'</div>'.
 			'</div>'.
@@ -170,7 +170,7 @@
            <br /><br />  
             
                 <h3>  
-                     <select name="city" id="city">  
+                     <select class ="select-city" id="city">  
                           <option value="">petstores across all cities</option>  
                           <?php echo fill_city($connect); ?>  
                      </select>  
