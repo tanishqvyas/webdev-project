@@ -33,7 +33,7 @@
 	font-weight: 900 !important;
 }
 
-.shop-longitude, .shop-lattitude
+.shop-longitude, .shop-lattitude, .center-lat , .center-long
 {
 	height: 0px;
 	width:0px;

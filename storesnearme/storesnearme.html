@@ -135,6 +135,8 @@
 			    <div class="shop-longitude">77.645</div>
 				<div class="shop-lattitude">12.97212</div>
 				<div class="shop-center">Bangalore</div>
+				<div class="center-lat">12.9716</div>
+				<div class = "center-long">77.5946</div>
 			</div>
 		</div>
 
@@ -148,9 +150,11 @@
 		    	<h5 class="card-title">Glenands</h5>
 		    	<p class="card-text">670, CMH Road, Opp. Royal Oaks, Indiranagar, Bengaluru</p>
 			    <p class="card-text"><small class="text-muted">Contact : 9620208757</small></p>
-			    <div class="shop-longitude">78.92798</div>
+			    <div class="shop-longitude">77.645</div>
 				<div class="shop-lattitude">12.97212</div>
 				<div class="shop-center">Bangalore</div>
+				<div class="center-lat">12.9716</div>
+				<div class = "center-long">77.5946</div>
 			</div>
 		</div>
 		
@@ -161,15 +165,21 @@
 	<script>
 
 		function initMap(){
-			var options = {
-                zoom : 12, 
-                center:{lat: 12.9716 , lng:77.5946 }
-            }    
+			 
 			var cards = document.querySelectorAll('.card');
 
-
+			
 			for(i=0;i<cards.length;i++)
 			{
+				var center_lat = cards[i].querySelector('.center-lat').textContent;
+				var center_long = cards[i].querySelector('.center-long').textContent;
+				console.log(center_lat);
+				console.log(center_long);
+				var options = {
+					zoom : 12, 
+					center:{lat: parseFloat(center_lat) , lng: parseFloat(center_long)}
+				}    
+
 				var longitude = cards[i].querySelector('.shop-longitude').textContent;
 				var latitude = cards[i].querySelector('.shop-lattitude').textContent;
 				var coords = {lat : parseFloat(latitude) , lng : parseFloat(longitude)};
