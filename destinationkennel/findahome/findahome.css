@@ -1,0 +1,116 @@
+#find-a-family-form
+{
+	margin: 30px 0;
+}
+
+.input-style
+{
+	border:1px black solid;
+
+}
+
+
+#find-a-family-form label
+{
+	padding: auto;
+	display: inline-block;
+
+}
+
+
+#find-a-family-form input
+{
+	height: 35px;
+	border-radius: 10px;
+	padding: 2px;
+	padding-left: 5px;
+	box-shadow: 1px 1px 5px;
+}
+
+.form-fields
+{
+	margin-bottom: 40px;
+	text-align-last: center left; 
+	font-size: 17px;
+	vertical-align: middle;
+}
+
+.form-fields span
+{
+	color: red;
+}
+
+#your-name
+{
+
+	margin-right: 40px;
+
+}
+
+#pet-name
+{
+	margin-right: 36px;
+}
+
+#pet-age
+{
+	margin-right: 52px;
+
+}
+
+#city-name
+{
+	margin-right: 45px;
+}
+
+#owner-email
+{
+	margin-right: 42px;
+}
+
+#pet-description
+{
+	margin-right: 40px;
+}
+
+#pet-image
+{
+	margin-right: 53px;	
+}
+
+#pet-image-input
+{
+	background-color: white;
+}
+
+textarea
+{
+	min-height: 100px;
+	resize: vertical;
+	width: 400px;
+	border-radius: 0 10px 10px 10px;
+	vertical-align: top;
+	box-shadow: 1px 1px 5px;
+}
+
+
+
+#button
+{
+	background-color: #4ccb55;
+	border-radius: 40px;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+}
+
+#button:hover
+{
+	background-color: #5cb863;
+	border-radius: 40px;
+	border:none;
+	padding: 10px 20px;
+	color: white;
+	cursor: pointer;
+}

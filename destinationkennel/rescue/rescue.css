@@ -1,0 +1,206 @@
+﻿/*
+
+.collapsible {
+    background-color: #4f8c97;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+
+.collapsibleQ{
+    background-color: #3e8f80;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+}
+
+
+
+.header-info 
+{
+    border-bottom: 2px grey solid;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0px 0px 5px 0px;
+}
+
+.header-info img 
+{
+    height: 150px;
+    border-radius: 50%;
+    border: 2px black solid;
+    margin-right: 10px;
+}
+
+.header-text 
+{
+    padding: 25px;
+}
+
+h5 
+{
+    margin: 3px 0px;
+}
+
+span 
+{
+    padding-right: 10px;
+}
+
+.owner-name 
+{
+    margin-bottom: 10px;
+    font-family: Times New Roman,Roboto,Aerial;
+}
+
+.description {
+    margin-bottom: 25px;
+}
+
+
+.button {
+    background-color: #4ccb55;
+    border-radius: 40px;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 0px;
+}
+
+    .button:hover {
+        background-color: #5cb863;
+        border-radius: 40px;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+#sidelist
+{
+    border: 10px solid red;
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.*/
+
+#pusher
+{
+    margin: 0px 20px 20px 25px;
+}
+
+
+
+
+.content h3
+{
+    margin: 30px 0px;
+    background-color: #c4d2d2;
+    display: block;
+    padding: 20px 0px 20px 5px;
+    border-radius: 5px;
+}
+
+.content h3
+{
+    margin: 30px 0px;
+    background-color: #c4d2d2;
+    display: block;
+    padding: 20px 0px 20px 5px;
+    border-radius: 5px;
+}
+
+
+
+.info-card button
+{
+    /*background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%);*/
+    border: none;
+    padding: 5px 20px 5px 5px;
+    display: block;
+    background-color: #8baaaa;
+    width: 100%;
+    border: 1px solid #c4d2d2; /*#acb8b8*/
+    text-align: left;
+
+}
+
+
+.info-card button:hover
+{
+    /*background-image: linear-gradient(45deg, #8baaaa 0%, #e1eded 100%);*/
+    border: none;
+    padding: 5px 20px 5px 5px;
+    display: block;
+    background-color: #6e9191;
+    width: 100%;
+    border: 1px solid #c4d2d2;
+    text-align: left;
+
+}
+
+
+
+
+.text-info
+{
+    padding: 10px;
+    display: none;
+    background-color: #c4d2d2;
+    margin-bottom: 10px;
+
+    max-height: 2000;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.text-info p
+{
+    margin-bottom: 10px;
+}
+
+
+/* styling of accordian menu begins here */
+
+.card-header
+{   
+    background-color:  #8baaaa !important;
+}
+
+.card-body
+{
+    background-color: #eef3f3 !important;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-bottom: 10px !important;
+}
+
+.mb-0 button
+{
+    color: black;
+    font-size: 20px;
+}
+
+.mb-0 button:hover
+{
+    text-decoration: none;
+    color: #eef3f3;
+}
+
+/* styling of accordian menu ends here */

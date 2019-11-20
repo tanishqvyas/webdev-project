@@ -2,6 +2,7 @@
     header("Content-type: text/css; charset: UTF-8");
 
 ?>
+
 #successful-submit
 {
 	position: fixed;
@@ -68,10 +69,10 @@ span
 	padding-right: 10px;
 }
 
-.owner-name
+owner-name
 {
-	margin-bottom: 10px;
-	font-family: Times New Roman,Roboto,Aerial;
+	margin_bottom: 10px;
+	font_family: Times New Roman,Roboto,Aerial;
 }
 
 .description
@@ -79,12 +80,6 @@ span
 	margin-bottom: 25px;
 }
 
-.owner-email
-{
-	height: 0px;
-	width : 0px;
-	opacity: 0;
-}
 
 .button
 {
@@ -109,3 +104,4 @@ span
 }
 
 
+?>

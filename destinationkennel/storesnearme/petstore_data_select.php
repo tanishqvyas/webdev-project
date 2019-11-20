@@ -14,9 +14,7 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!-- 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --> 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
@@ -79,28 +77,27 @@
 		<hr style="background-color: black;">
 
 		<ul>
-            <li><a href="../findahome/findahome.html" ><i class="fas fa-home"  ></i> Find a Home</a></li>
+            <li><a href="../findahome/form.php" ><i class="fas fa-home"  ></i> Find a Home</a></li>
             
             <li><a href="../temporarykennel/temporarykennel.html" ><i class="fas fa-home"  ></i> Temporary Kennels</a></li>
             
-            <li><a href="../adopt/adopt.html" ><i class="fas fa-paw"  ></i> Adopt</a></li>
+            <li><a href="../adopt/adopt.php" ><i class="fas fa-paw"  ></i> Adopt</a></li>
             
             <li><a href="../rescue/rescue.html" ><i class="fas fa-first-aid"  ></i> Rescue</a></li>
             
             <li><a href=""  onclick="closeSlideMenu()"><i class="fas fa-shopping-cart"  ></i> Pet Stores near me</a></li>
             
-            <li><a href="../trainer/trainer.html" ><i class="fas fa-user"  ></i> Pet Trainer</a></li>
+            <li><a href="../trainer/trainer_data_select.php" ><i class="fas fa-user"  ></i> Pet Trainer</a></li>
             
-            <li><a href="../vet/vet.html" ><i class="fas fa-user-md" ></i> Contact A Vet</a></li>
+            <li><a href="../vet/vet_data_select.php" ><i class="fas fa-user-md" ></i> Contact A Vet</a></li>
             
             <li><a href="../generalcare/generalcare.html" ><i class="fas fa-paw" ></i> General Pet Care</a></li>
             
             
             <li><a href="../donate/donate.html" ><i class="fas fa-hand-holding-usd"></i> Donate</a></li>
             
-            <li><a href="../events/events.html" ><i class="far fa-list-alt"></i> Events</a></li>
+            <li><a href="../events/events_data_select.php" ><i class="far fa-list-alt"></i> Events</a></li>
             
-            <li><a href="../goodbye/goodbye.html" ><i class="fas fa-sad-tear"></i> Saying Goodbye</a></li>
             
             <li><a href="../contact/contact.html" ><i class="fas fa-address-book" ></i> Name For Pet?</a></li>
 
@@ -147,23 +144,20 @@
 		  		'</div>'. 
 
 		  		'<div class="card-body">'.
-					echo "hello"; 
 			  		'<h2 class="card-title">'. $row["name"].'</h2>'.
 			  		'<p class="card-text">'.'📍'.$row["address"].'</p>'.
 				    '<p class="card-text">'.'<small class="text-muted">'.'☎'.$row["contact"] .'</small>'.'</p>'.
 		
 
-					'<div class="shop-lattitude">'. $row["Latitude"] .'</div>'.
-				    '<div class="shop-longitude">'.$row["Longitude"].'</div>'.
+					'<div class="shop-lattitude">'.'Latitude'. $row["Latitude"] .'</div>'.
+				    '<div class="shop-longitude">'.'Longitude'. $row["Longitude"].'</div>'.
 					'<div class="centre-lattitude">'. $row["centre-latitude"] .'</div>'.
 				    '<div class="centre-longitude">'.$row["centre-longitude"].'</div>'.
 			'</div>'.
 			'</div>'.
 		'</div>'
-		 ;
+		 ;  
     
-       
-
 
 
       }   
@@ -240,3 +234,7 @@
 </body>	
 </html>
 
+  <!-- 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	-->
