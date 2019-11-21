@@ -38,8 +38,8 @@
 				    '<p class="card-text">'.'<small class="text-muted">'.'☎'.$row["contact"] .'</small>'.'</p>'.
 		
 
-					'<div class="shop-lattitude">'.'Latitude'. $row["Latitude"] .'</div>'.
-				    '<div class="shop-longitude">'.'Longitude'.$row["Longitude"].'</div>'.
+					'<div class="shop-lattitude">'.$row["Latitude"] .'</div>'.
+				    '<div class="shop-longitude">'.$row["Longitude"].'</div>'.
 					'<div class="centre-lattitude">'. $row["centre-latitude"] .'</div>'.
 				    '<div class="centre-longitude">'.$row["centre-longitude"].'</div>'.
 			'</div>'.
@@ -51,23 +51,29 @@
  ?>  
  <script>
 
-		function initMap(){
-			var options = {
-                zoom : 12, 
-                center:{lat: 12.9716 , lng:77.5946 }
-            }    
-			var cards = document.querySelectorAll('.card');
+function initMap(){
+			 
+			 var cards = document.querySelectorAll('.card');
 
-
-			for(i=0;i<cards.length;i++)
-			{
-				var longitude = cards[i].querySelector('.shop-longitude').textContent;
-				var latitude = cards[i].querySelector('.shop-lattitude').textContent;
-				var coords = {lat : parseFloat(latitude) , lng : parseFloat(longitude)};
-				var maparea = cards[i].querySelector('.my-shop-map');
-				var map = new google.maps.Map(maparea,options);
-				var marker = new google.maps.Marker({position: coords,animation:google.maps.Animation.BOUNCE ,map: map });
-			}	
+			 
+			 for(i=0;i<cards.length;i++)
+			 {
+				  var center_lat = cards[i].querySelector('.centre-lattitude').textContent;
+				  var center_long = cards[i].querySelector('.centre-longitude').textContent;
+				
+				  var options = {
+					   zoom : 12, 
+					   center:{lat: parseFloat(center_lat) , lng: parseFloat(center_long)}
+				  }    
+				  var longitude = cards[i].querySelector('.shop-longitude').textContent;
+				  var latitude = cards[i].querySelector('.shop-lattitude').textContent;
+				  
+				  var coords = {lat : parseFloat(latitude) , lng : parseFloat(longitude)};
+				  
+				  var maparea = cards[i].querySelector('.my-shop-map');
+				  var map = new google.maps.Map(maparea,options);
+				  var marker = new google.maps.Marker({position: coords , map : map });
+			 }	
 		}
 
 	
